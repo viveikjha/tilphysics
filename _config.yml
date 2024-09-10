@@ -1,12 +1,12 @@
-title:              Clean Blog
+title:              TIL Physics
 email:              your-email@example.com
-description:        A Blog Theme by Start Bootstrap
+description:        Today I Learned (TIL) Physics
 author:             Start Bootstrap
-baseurl:            "/startbootstrap-clean-blog-jekyll"
-url:                "https://startbootstrap.github.io"
+baseurl:            "/tilphysics"
+url:                "https://viveikjha.github.io/tilphysics"
 
 # Social Profiles
-twitter_username:   SBootstrap
+twitter_username:   tilphysics
 github_username:    StartBootstrap
 facebook_username:  StartBootstrap
 instagram_username:  
