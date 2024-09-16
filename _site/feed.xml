@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/tilphysics/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/tilphysics/" rel="alternate" type="text/html" /><updated>2024-09-15T16:08:39+05:30</updated><id>http://localhost:4000/tilphysics/feed.xml</id><title type="html">Today I Learned (TIL) Physics</title><subtitle>Today I Learned (TIL) Physics</subtitle><author><name>Vivek Kumar Jha</name></author><entry><title type="html">TIL Physics 04: The Blandford-Znajek Mechanism</title><link href="http://localhost:4000/tilphysics/2024/09/12/til-04.html" rel="alternate" type="text/html" title="TIL Physics 04: The Blandford-Znajek Mechanism" /><published>2024-09-12T08:15:13+05:30</published><updated>2024-09-12T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/12/til-04</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/12/til-04.html"><![CDATA[<h3>1. Introduction</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/tilphysics/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/tilphysics/" rel="alternate" type="text/html" /><updated>2024-09-16T23:21:33+05:30</updated><id>http://localhost:4000/tilphysics/feed.xml</id><title type="html">Today I Learned (TIL) Physics</title><subtitle>Today I Learned (TIL) Physics</subtitle><author><name>Vivek Kumar Jha</name></author><entry><title type="html">TIL Physics 04: The Blandford-Znajek Mechanism</title><link href="http://localhost:4000/tilphysics/2024/09/12/til-04.html" rel="alternate" type="text/html" title="TIL Physics 04: The Blandford-Znajek Mechanism" /><published>2024-09-12T08:15:13+05:30</published><updated>2024-09-12T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/12/til-04</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/12/til-04.html"><![CDATA[<h3>1. Introduction</h3>
 
 <p>The <a href="https://ui.adsabs.harvard.edu/abs/1977MNRAS.179..433B/abstract"target=None>Blandford-Znajek (BZ) mechanism </a>, proposed by Roger Blandford and Roman Znajek in 1977, is a cornerstone in theoretical astrophysics, offering a framework to explain the formation and energy extraction of relativistic jets from rotating black holes. Active Galactic Nuclei (AGN) are among the most energetic phenomena in the universe, and the BZ mechanism provides a model for how rotational energy from a black hole can be converted into the powerful, highly collimated jets observed in many AGN systems.</p>
 
@@ -58,7 +58,90 @@ Despite its successes, several challenges and unanswered questions remain in ful
 <li>Accretion Dynamics: The interplay between the BZ mechanism and accretion flows remains a complex problem. Accretion flows can influence the magnetic field structure and jet dynamics, complicating the theoretical picture.</li>
 
 
-</ul>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[1. Introduction]]></summary></entry><entry><title type="html">TIL Physics 03: The Baldwin effect in Active Galactic Nuclei</title><link href="http://localhost:4000/tilphysics/2024/09/11/til-03.html" rel="alternate" type="text/html" title="TIL Physics 03: The Baldwin effect in Active Galactic Nuclei" /><published>2024-09-11T01:15:13+05:30</published><updated>2024-09-11T01:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/11/til-03</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/11/til-03.html"><![CDATA[<p>The Baldwin effect, a fundamental phenomenon in quasar and active galactic nuclei (AGN) astrophysics, describes an inverse correlation between the equivalent width of specific broad emission lines, primarily C IV λ1549, and the continuum luminosity of the source. First observed by <a href="https://ui.adsabs.harvard.edu/abs/1977ApJ...214..679B/abstract" target=None>Jack Baldwin</a> in 1977, this effect provides critical insights into the physical processes occurring in the vicinity of supermassive black holes (SMBHs) at galactic centers. The relationship manifests as a decrease in emission line strength relative to the continuum as the overall luminosity of the AGN increases.</p>
+</ul>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[1. Introduction]]></summary></entry><entry><title type="html">TIL Physics 05: Reionization of the Universe</title><link href="http://localhost:4000/tilphysics/2024/09/12/til-05.html" rel="alternate" type="text/html" title="TIL Physics 05: Reionization of the Universe" /><published>2024-09-12T08:15:13+05:30</published><updated>2024-09-12T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/12/til-05</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/12/til-05.html"><![CDATA[<main>
+        <section id="introduction">
+            <h2>1. Introduction: Cosmic Ionization History</h2>
+            <p>The reionization epoch marks a fundamental transition in the universe's evolution, characterized by the transformation of the intergalactic medium (IGM) from a neutral to an ionized state. This process occurred in two distinct phases: hydrogen reionization and helium reionization, each driven by different astrophysical phenomena and having profound implications for structure formation and observational cosmology.</p>
+        </section>
+
+        <section id="recombination">
+            <h2>2. Recombination and the Dark Ages</h2>
+            <p>Following the Big Bang, the universe existed in a hot, dense, and ionized state. At redshift z ≈ 1100 (approximately 380,000 years after the Big Bang), as the universe expanded and cooled to T ≈ 3000 K, protons and electrons recombined to form neutral hydrogen. This process, described by the Saha equation, marked the beginning of the "Dark Ages." During this period, the universe was dominated by neutral hydrogen, making it opaque to ultraviolet radiation.</p>
+        </section>
+
+        <section id="hydrogen-reionization">
+            <h2>3. Hydrogen Reionization: The Cosmic Dawn</h2>
+            
+            <h3>3.1 Population III Stars and Early Galaxies</h3>
+            <p>The reionization of hydrogen began with the formation of Population III stars around z ≈ 20-30. These metal-free stars, with masses potentially reaching 100-1000 M☉ and effective temperatures of T_eff ≈ 10^5 K, produced a hard UV spectrum capable of ionizing hydrogen efficiently. The ionizing photon production rate of these early sources is crucial for understanding the progress of reionization.</p>
+
+            <h3>3.2 Stromgren Spheres and Bubble Growth</h3>
+            <p>The growth of ionized regions around these first sources can be conceptualized using the Stromgren sphere formalism. Initially, these ionized bubbles are confined by the balance between ionization and recombination rates. As sources become more numerous and bubbles begin to overlap, the reionization process accelerates, leading to a percolation phase where most of the IGM becomes ionized.</p>
+
+            <h3>3.3 Inhomogeneous Reionization and the Cosmic Web</h3>
+            <p>The reionization process was highly inhomogeneous, influenced by the underlying density field of the cosmic web. Overdense regions, which hosted the first sources, ionized first, while underdense voids remained neutral for longer periods. This inhomogeneity has significant implications for the observational signatures of reionization.</p>
+
+            <h3>3.4 Completion of Hydrogen Reionization</h3>
+            <p>Observations indicate that hydrogen reionization was largely complete by redshift z ≈ 6, approximately 1 billion years after the Big Bang. This conclusion is primarily based on the Gunn-Peterson trough observed in high-redshift quasar spectra. The absence of Gunn-Peterson absorption at z &lt; 6 suggests that the IGM was highly ionized by this time, with neutral fractions below ~10^-4.</p>
+        </section>
+
+        <section id="helium-reionization">
+            <h2>4. Helium Reionization: The Role of Quasars</h2>
+            <p>While hydrogen and HeI were ionized by the first stars and galaxies, the complete ionization of HeII required more energetic photons, primarily provided by quasars. The HeII reionization epoch, occurring at lower redshifts (z ≈ 3-4), had significant impacts on the thermal history of the IGM.</p>
+
+            <h3>4.1 Quasar Emission Spectra and HeII Ionization</h3>
+            <p>Quasars, powered by accreting supermassive black holes, emit a power-law spectrum typically modeled with a spectral index α ≈ 1.5 - 2 for the extreme UV and soft X-ray regime relevant for HeII ionization. The HeII ionization cross-section peaks at 54.4 eV and decreases as ν^(-3) at higher energies, making quasars with harder spectra more efficient at ionizing HeII.</p>
+
+            <h3>4.2 IGM Heating During Helium Reionization</h3>
+            <p>The photoionization of HeII deposited significant energy into the IGM, raising its temperature to T ≈ 20,000 - 30,000 K. This heating had profound effects on the IGM's equation of state and the Lyman-α forest observations.</p>
+        </section>
+
+        <section id="advanced-concepts">
+            <h2>5. Advanced Reionization Physics</h2>
+            
+            <h3>5.1 Non-equilibrium Ionization Kinetics</h3>
+            <p>The detailed ionization state of the IGM during reionization involves non-equilibrium processes. The evolution of species fractions (HI, HII, HeI, HeII, HeIII) is governed by a set of coupled differential equations involving photoionization, collisional ionization, and recombination processes.</p>
+
+            <h3>5.2 Radiative Transfer in Reionization</h3>
+            <p>Accurate modeling of reionization requires solving the radiative transfer equation in complex 3D geometries. Various numerical methods have been developed, including ray-tracing algorithms, moment methods (e.g., M1 closure), and Monte Carlo techniques. These methods account for effects such as shadowing, spectral hardening, and source clustering.</p>
+
+            <h3>5.3 21cm Cosmology</h3>
+            <p>The 21cm hyperfine transition of neutral hydrogen provides a powerful probe of the reionization epoch. The spin temperature of this transition is influenced by coupling to the CMB temperature, collisions, and the Wouthuysen-Field effect. The resulting 21cm brightness temperature relative to the CMB serves as a sensitive measure of the neutral fraction during reionization.</p>
+        </section>
+
+        <section id="observational-probes">
+            <h2>6. Observational Probes of Reionization</h2>
+            <ul>
+                <li>Gunn-Peterson Trough: The complete absorption of flux blueward of Lyman-α in quasar spectra at z &gt; 6, indicating a significantly neutral IGM.</li>
+                <li>Thomson scattering optical depth in CMB polarization</li>
+                <li>Kinetic Sunyaev-Zel'dovich effect</li>
+                <li>Lyman-α emitter surveys</li>
+                
+            </ul>
+            <p>Each of these probes provides complementary information about the timing, duration, and morphology of the reionization process.</p>
+        </section>
+
+        <section id="frontiers">
+            <h2>7. Current Frontiers and Open Questions</h2>
+            <ul>
+                <li>Relative contributions of various source populations (Pop III stars, early galaxies, mini-quasars) to reionization</li>
+                <li>Impact of reionization on galaxy formation, particularly for low-mass halos</li>
+                <li>Detailed topology of reionization and its connection to the underlying cosmic web</li>
+                <li>Nature of early quasars and their role in HeII reionization</li>
+                <li>Detection and characterization of the 21cm signal from the Epoch of Reionization</li>
+                <li>Influence of magnetic fields generated during reionization on subsequent structure formation</li>
+            </ul>
+        </section>
+
+        <section id="conclusion">
+            <h2>8. Conclusion</h2>
+            <p>The reionization of the universe represents a critical phase transition in cosmic history, intricately linked to the formation of the first stars, galaxies, and quasars. Understanding this epoch requires a synthesis of astrophysics, plasma physics, and cosmology. Ongoing observations, particularly from next-generation telescopes like the James Webb Space Telescope (JWST) and the upcoming Square Kilometre Array (SKA), promise to refine our understanding of this pivotal era, potentially revolutionizing our view of the early universe and the processes that shaped the cosmos we observe today.</p>
+        </section>
+    </main>
+
+  
+</body>
+</html>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[1. Introduction: Cosmic Ionization History The reionization epoch marks a fundamental transition in the universe's evolution, characterized by the transformation of the intergalactic medium (IGM) from a neutral to an ionized state. This process occurred in two distinct phases: hydrogen reionization and helium reionization, each driven by different astrophysical phenomena and having profound implications for structure formation and observational cosmology.]]></summary></entry><entry><title type="html">TIL Physics 03: The Baldwin effect in Active Galactic Nuclei</title><link href="http://localhost:4000/tilphysics/2024/09/11/til-03.html" rel="alternate" type="text/html" title="TIL Physics 03: The Baldwin effect in Active Galactic Nuclei" /><published>2024-09-11T01:15:13+05:30</published><updated>2024-09-11T01:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/11/til-03</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/11/til-03.html"><![CDATA[<p>The Baldwin effect, a fundamental phenomenon in quasar and active galactic nuclei (AGN) astrophysics, describes an inverse correlation between the equivalent width of specific broad emission lines, primarily C IV λ1549, and the continuum luminosity of the source. First observed by <a href="https://ui.adsabs.harvard.edu/abs/1977ApJ...214..679B/abstract" target=None>Jack Baldwin</a> in 1977, this effect provides critical insights into the physical processes occurring in the vicinity of supermassive black holes (SMBHs) at galactic centers. The relationship manifests as a decrease in emission line strength relative to the continuum as the overall luminosity of the AGN increases.</p>
 
 <h2>Physical Mechanisms</h2>
 
