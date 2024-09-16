@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/tilphysics/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/tilphysics/" rel="alternate" type="text/html" /><updated>2024-09-16T23:21:33+05:30</updated><id>http://localhost:4000/tilphysics/feed.xml</id><title type="html">Today I Learned (TIL) Physics</title><subtitle>Today I Learned (TIL) Physics</subtitle><author><name>Vivek Kumar Jha</name></author><entry><title type="html">TIL Physics 04: The Blandford-Znajek Mechanism</title><link href="http://localhost:4000/tilphysics/2024/09/12/til-04.html" rel="alternate" type="text/html" title="TIL Physics 04: The Blandford-Znajek Mechanism" /><published>2024-09-12T08:15:13+05:30</published><updated>2024-09-12T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/12/til-04</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/12/til-04.html"><![CDATA[<h3>1. Introduction</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/tilphysics/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/tilphysics/" rel="alternate" type="text/html" /><updated>2024-09-16T23:38:45+05:30</updated><id>http://localhost:4000/tilphysics/feed.xml</id><title type="html">Today I Learned (TIL) Physics</title><subtitle>Today I Learned (TIL) Physics</subtitle><author><name>Vivek Kumar Jha</name></author><entry><title type="html">TIL Physics 04: The Blandford-Znajek Mechanism</title><link href="http://localhost:4000/tilphysics/2024/09/12/til-04.html" rel="alternate" type="text/html" title="TIL Physics 04: The Blandford-Znajek Mechanism" /><published>2024-09-12T08:15:13+05:30</published><updated>2024-09-12T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/12/til-04</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/12/til-04.html"><![CDATA[<h3>1. Introduction</h3>
 
 <p>The <a href="https://ui.adsabs.harvard.edu/abs/1977MNRAS.179..433B/abstract"target=None>Blandford-Znajek (BZ) mechanism </a>, proposed by Roger Blandford and Roman Znajek in 1977, is a cornerstone in theoretical astrophysics, offering a framework to explain the formation and energy extraction of relativistic jets from rotating black holes. Active Galactic Nuclei (AGN) are among the most energetic phenomena in the universe, and the BZ mechanism provides a model for how rotational energy from a black hole can be converted into the powerful, highly collimated jets observed in many AGN systems.</p>
 
@@ -141,7 +141,94 @@ Despite its successes, several challenges and unanswered questions remain in ful
 
   
 </body>
-</html>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[1. Introduction: Cosmic Ionization History The reionization epoch marks a fundamental transition in the universe's evolution, characterized by the transformation of the intergalactic medium (IGM) from a neutral to an ionized state. This process occurred in two distinct phases: hydrogen reionization and helium reionization, each driven by different astrophysical phenomena and having profound implications for structure formation and observational cosmology.]]></summary></entry><entry><title type="html">TIL Physics 03: The Baldwin effect in Active Galactic Nuclei</title><link href="http://localhost:4000/tilphysics/2024/09/11/til-03.html" rel="alternate" type="text/html" title="TIL Physics 03: The Baldwin effect in Active Galactic Nuclei" /><published>2024-09-11T01:15:13+05:30</published><updated>2024-09-11T01:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/11/til-03</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/11/til-03.html"><![CDATA[<p>The Baldwin effect, a fundamental phenomenon in quasar and active galactic nuclei (AGN) astrophysics, describes an inverse correlation between the equivalent width of specific broad emission lines, primarily C IV λ1549, and the continuum luminosity of the source. First observed by <a href="https://ui.adsabs.harvard.edu/abs/1977ApJ...214..679B/abstract" target=None>Jack Baldwin</a> in 1977, this effect provides critical insights into the physical processes occurring in the vicinity of supermassive black holes (SMBHs) at galactic centers. The relationship manifests as a decrease in emission line strength relative to the continuum as the overall luminosity of the AGN increases.</p>
+</html>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[1. Introduction: Cosmic Ionization History The reionization epoch marks a fundamental transition in the universe's evolution, characterized by the transformation of the intergalactic medium (IGM) from a neutral to an ionized state. This process occurred in two distinct phases: hydrogen reionization and helium reionization, each driven by different astrophysical phenomena and having profound implications for structure formation and observational cosmology.]]></summary></entry><entry><title type="html">TIL Physics 06: The Gunn Peterson Effect</title><link href="http://localhost:4000/tilphysics/2024/09/12/til-06.html" rel="alternate" type="text/html" title="TIL Physics 06: The Gunn Peterson Effect" /><published>2024-09-12T08:15:13+05:30</published><updated>2024-09-12T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/12/til-06</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/12/til-06.html"><![CDATA[<body>
+    <header>
+        <h1>The Gunn-Peterson Effect: Probing Cosmic Reionization</h1>
+    </header>
+
+   
+    <main>
+        <section id="introduction">
+            <h2>1. Introduction</h2>
+            <p>The Gunn-Peterson effect, predicted by <a href="https://ui.adsabs.harvard.edu/abs/1965ApJ...142.1633G/abstract"target=blank>James Gunn and Bruce Peterson in 1965</a>, is a key observational probe in cosmology, particularly for studying the epoch of reionization. This phenomenon manifests as a broad absorption trough in the spectra of distant quasars, providing crucial insights into the ionization state of the intergalactic medium (IGM) at high redshifts.</p>
+        </section>
+
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Gunn%E2%80%93Peterson_trough.gif" alt="Gunn-Peterson Trough GIF" width="500">
+            <figcaption><i>The Gunn Peterson trough seen in a high redshift Quasar. Image courtesy: Wikimedia Commons.</i></figcaption>
+          </figure>
+          
+          
+
+        <section id="physical-basis">
+            <h2>2. Physical Basis</h2>
+            <p>The Gunn-Peterson effect arises from the resonant scattering of Lyman-α photons by neutral hydrogen in the IGM. As light from a distant quasar travels through the universe, it is continuously redshifted. When this light reaches the Lyman-α resonance frequency in the rest frame of intervening neutral hydrogen, it can be absorbed, creating an absorption feature in the observed spectrum.</p>
+            
+            <h3>2.1 Optical Depth</h3>
+            <p>The strength of the Gunn-Peterson absorption is characterized by the optical depth τ_GP. In a homogeneous IGM, this is given by:</p>
+
+            <div class="formula">
+                τ_GP ≈ 6.45 × 10^5 × (Ω_b h^2 / 0.02) × [(1+z) / 7]^(3/2) × x_HI
+            </div>
+
+            <p>Here, Ω_b is the baryon density parameter, h is the reduced Hubble constant, z is the redshift, and x_HI is the neutral hydrogen fraction. The strong dependence on x_HI makes the Gunn-Peterson effect a sensitive probe of the IGM's ionization state.</p>
+        </section>
+
+        <section id="observational-features">
+            <h2>3. Observational Features</h2>
+            <p>The Gunn-Peterson effect manifests in quasar spectra as:</p>
+            <ul>
+                <li>A complete absorption trough blueward of the Lyman-α emission line in the quasar's rest frame.</li>
+                <li>An abrupt onset of transmission at lower redshifts, known as the Gunn-Peterson trough edge.</li>
+                <li>Variations in the trough's structure due to inhomogeneities in the IGM.</li>
+            </ul>
+            
+            <h3>3.1 Lyman Series Absorption</h3>
+            <p>While the Lyman-α transition is the most prominent, absorption due to higher-order Lyman series transitions (Lyman-β, Lyman-γ, etc.) can also be observed, providing additional constraints on the IGM properties.</p>
+        </section>
+
+        <section id="implications">
+            <h2>4. Implications for Reionization</h2>
+            <p>The Gunn-Peterson effect has profound implications for our understanding of cosmic reionization:</p>
+            
+            <h3>4.1 End of Reionization</h3>
+            <p>The absence of a complete Gunn-Peterson trough in quasar spectra at z &lt; 6 suggests that hydrogen reionization was largely complete by this epoch. Even a small neutral fraction (x_HI ~ 10^-4) is sufficient to produce significant absorption.</p>
+            
+            <h3>4.2 Reionization Timeline</h3>
+            <p>The evolution of the Gunn-Peterson optical depth with redshift constrains the timeline of reionization. A rapid increase in τ_GP around z ~ 6 indicates a swift change in the IGM's ionization state.</p>
+            
+            <h3>4.3 Inhomogeneous Reionization</h3>
+            <p>Variations in the Gunn-Peterson trough along different lines of sight provide evidence for the inhomogeneous nature of reionization, with some regions ionizing earlier than others.</p>
+        </section>
+
+        <section id="limitations">
+            <h2>5. Limitations and Challenges</h2>
+            <p>While powerful, the Gunn-Peterson effect has some limitations:</p>
+            <ul>
+                <li>Saturation: The effect saturates at relatively low neutral fractions, making it challenging to probe the earliest stages of reionization.</li>
+                <li>Line-of-sight variations: Interpretation is complicated by the fact that each quasar provides only a single line-of-sight through the IGM.</li>
+                <li>Contamination: Distinguishing the smooth Gunn-Peterson absorption from the Lyman-α forest and damped Lyman-α systems can be challenging.</li>
+            </ul>
+        </section>
+
+        <section id="advanced-topics">
+            <h2>6. Advanced Topics</h2>
+            
+            <h3>6.1 Dark Gaps Analysis</h3>
+            <p>Analysis of "dark gaps" (extended regions of zero transmitted flux) in quasar spectra can provide additional constraints on the neutral fraction during the late stages of reionization.</p>
+            
+            <h3>6.2 Proximity Effect</h3>
+            <p>The ionizing radiation from the quasar itself creates a highly ionized region in its vicinity, known as the proximity effect. This must be accounted for in Gunn-Peterson analysis.</p>
+            
+          
+        </section>
+
+       
+    </main>
+
+
+</body>
+</html>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[The Gunn-Peterson Effect: Probing Cosmic Reionization]]></summary></entry><entry><title type="html">TIL Physics 03: The Baldwin effect in Active Galactic Nuclei</title><link href="http://localhost:4000/tilphysics/2024/09/11/til-03.html" rel="alternate" type="text/html" title="TIL Physics 03: The Baldwin effect in Active Galactic Nuclei" /><published>2024-09-11T01:15:13+05:30</published><updated>2024-09-11T01:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/11/til-03</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/11/til-03.html"><![CDATA[<p>The Baldwin effect, a fundamental phenomenon in quasar and active galactic nuclei (AGN) astrophysics, describes an inverse correlation between the equivalent width of specific broad emission lines, primarily C IV λ1549, and the continuum luminosity of the source. First observed by <a href="https://ui.adsabs.harvard.edu/abs/1977ApJ...214..679B/abstract" target=None>Jack Baldwin</a> in 1977, this effect provides critical insights into the physical processes occurring in the vicinity of supermassive black holes (SMBHs) at galactic centers. The relationship manifests as a decrease in emission line strength relative to the continuum as the overall luminosity of the AGN increases.</p>
 
 <h2>Physical Mechanisms</h2>
 
