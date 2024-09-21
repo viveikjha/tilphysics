@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/tilphysics/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/tilphysics/" rel="alternate" type="text/html" /><updated>2024-09-16T23:38:45+05:30</updated><id>http://localhost:4000/tilphysics/feed.xml</id><title type="html">Today I Learned (TIL) Physics</title><subtitle>Today I Learned (TIL) Physics</subtitle><author><name>Vivek Kumar Jha</name></author><entry><title type="html">TIL Physics 04: The Blandford-Znajek Mechanism</title><link href="http://localhost:4000/tilphysics/2024/09/12/til-04.html" rel="alternate" type="text/html" title="TIL Physics 04: The Blandford-Znajek Mechanism" /><published>2024-09-12T08:15:13+05:30</published><updated>2024-09-12T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/12/til-04</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/12/til-04.html"><![CDATA[<h3>1. Introduction</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/tilphysics/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/tilphysics/" rel="alternate" type="text/html" /><updated>2024-09-21T15:39:31+05:30</updated><id>http://localhost:4000/tilphysics/feed.xml</id><title type="html">Today I Learned (TIL) Physics</title><subtitle>Today I Learned (TIL) Physics</subtitle><author><name>Vivek Kumar Jha</name></author><entry><title type="html">TIL Physics 04: The Blandford-Znajek Mechanism</title><link href="http://localhost:4000/tilphysics/2024/09/12/til-04.html" rel="alternate" type="text/html" title="TIL Physics 04: The Blandford-Znajek Mechanism" /><published>2024-09-12T08:15:13+05:30</published><updated>2024-09-12T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/12/til-04</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/12/til-04.html"><![CDATA[<h3>1. Introduction</h3>
 
 <p>The <a href="https://ui.adsabs.harvard.edu/abs/1977MNRAS.179..433B/abstract"target=None>Blandford-Znajek (BZ) mechanism </a>, proposed by Roger Blandford and Roman Znajek in 1977, is a cornerstone in theoretical astrophysics, offering a framework to explain the formation and energy extraction of relativistic jets from rotating black holes. Active Galactic Nuclei (AGN) are among the most energetic phenomena in the universe, and the BZ mechanism provides a model for how rotational energy from a black hole can be converted into the powerful, highly collimated jets observed in many AGN systems.</p>
 
@@ -228,7 +228,140 @@ Despite its successes, several challenges and unanswered questions remain in ful
 
 
 </body>
-</html>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[The Gunn-Peterson Effect: Probing Cosmic Reionization]]></summary></entry><entry><title type="html">TIL Physics 03: The Baldwin effect in Active Galactic Nuclei</title><link href="http://localhost:4000/tilphysics/2024/09/11/til-03.html" rel="alternate" type="text/html" title="TIL Physics 03: The Baldwin effect in Active Galactic Nuclei" /><published>2024-09-11T01:15:13+05:30</published><updated>2024-09-11T01:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/11/til-03</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/11/til-03.html"><![CDATA[<p>The Baldwin effect, a fundamental phenomenon in quasar and active galactic nuclei (AGN) astrophysics, describes an inverse correlation between the equivalent width of specific broad emission lines, primarily C IV λ1549, and the continuum luminosity of the source. First observed by <a href="https://ui.adsabs.harvard.edu/abs/1977ApJ...214..679B/abstract" target=None>Jack Baldwin</a> in 1977, this effect provides critical insights into the physical processes occurring in the vicinity of supermassive black holes (SMBHs) at galactic centers. The relationship manifests as a decrease in emission line strength relative to the continuum as the overall luminosity of the AGN increases.</p>
+</html>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[The Gunn-Peterson Effect: Probing Cosmic Reionization]]></summary></entry><entry><title type="html">TIL Physics 07: Ram Pressure Stripping</title><link href="http://localhost:4000/tilphysics/2024/09/12/til-07.html" rel="alternate" type="text/html" title="TIL Physics 07: Ram Pressure Stripping" /><published>2024-09-12T08:15:13+05:30</published><updated>2024-09-12T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/12/til-07</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/12/til-07.html"><![CDATA[<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+    </script>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6CS6PAR1qtU?si=DG8SkQNz-5eht7XO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<h2>1. Introduction</h2>
+<p>Ram pressure stripping is a hydrodynamical process occurring when galaxies traverse through a dense medium, typically the hot, tenuous plasma known as the intracluster medium (ICM) in galaxy clusters. This phenomenon plays a crucial role in galaxy evolution within dense environments, affecting gas dynamics, star formation, and overall galactic morphology. The process is fundamentally a result of the interaction between the interstellar medium (ISM) of a galaxy and the ICM, mediated by the relative motion between the two.</p>
+
+<h2>2. Theoretical Framework</h2>
+<h3>2.1 Ram Pressure Formulation</h3>
+<p>Ram pressure is the pressure exerted on a body moving through a fluid medium. In the context of galaxies, it is the pressure experienced by a galaxy's gas as it moves through the ICM. Quantitatively, ram pressure is defined as:</p>
+
+$$
+P_{\text{ram}} = \rho_{\text{ICM}} v^2
+$$
+
+<p>Where $\rho_{\text{ICM}}$ is the density of the ICM and $v$ is the velocity of the galaxy relative to the ICM. This formulation stems from the concept of dynamic pressure in fluid dynamics. The quadratic dependence on velocity underscores the significant impact of a galaxy's speed on the stripping process.</p>
+
+<p>The physical basis for this equation can be understood by considering the momentum transfer from the ICM to the galaxy's gas. As the galaxy moves through the ICM, it experiences a force per unit area (pressure) proportional to the rate of change of momentum of the ICM particles it encounters. This rate is proportional to both the number of particles encountered per unit time (related to $\rho_{\text{ICM}}$) and the momentum change per particle (proportional to $v$).</p>
+
+<h3>2.2 Stripping Condition</h3>
+<p><a href="https://ui.adsabs.harvard.edu/abs/1972ApJ...176....1G/abstract"target=blank>Gunn & Gott (1972)</a>  proposed a simplistic yet insightful criterion for the onset of ram pressure stripping. Stripping occurs when the ram pressure exceeds the gravitational restoring force per unit area:</p>
+
+$$
+\rho_{\text{ICM}} v^2 > 2\pi G \Sigma_{\text{disk}} \Sigma_{\text{gas}}
+$$
+
+<p>Where $G$ is the gravitational constant, $\Sigma_{\text{disk}}$ is the surface density of the galactic disk, and $\Sigma_{\text{gas}}$ is the surface density of the gas. This condition, while simplistic, provides valuable insight into the competing forces at play: the ram pressure pushing the gas out versus the gravitational force holding it in.</p>
+
+<p>However, this condition assumes a thin, face-on disk and neglects the multiphase nature of the ISM. In reality, the ISM consists of a complex mixture of cold, warm, and hot gas phases, each responding differently to ram pressure. The cold, dense molecular clouds are more resistant to stripping than the diffuse, hot gas.</p>
+
+<h2>3. Advanced Physics Considerations</h2>
+<h3>3.1 Kelvin-Helmholtz Instabilities</h3>
+<p>At the interface between the ICM and the ISM, Kelvin-Helmholtz instabilities can develop, enhancing gas stripping. These instabilities occur when there is velocity shear in a continuous fluid, or at the interface between two fluids moving at different velocities. The growth rate of these instabilities is given by:</p>
+
+$$
+\omega = k \sqrt{\frac{\rho_1 \rho_2}{(\rho_1 + \rho_2)^2}} (v_1 - v_2)
+$$
+
+<p>Where $k$ is the wavenumber of the instability, $\rho_1$ and $\rho_2$ are the densities of the two fluids, and $v_1$ and $v_2$ are their respective velocities. These instabilities can lead to mixing of the ICM and ISM, accelerating the stripping process.</p>
+
+<h3>3.2 Magnetohydrodynamic Effects</h3>
+<p>The presence of magnetic fields in both the ICM and ISM can significantly alter the stripping process. Magnetic pressure, given by:</p>
+
+$$
+P_B = \frac{B^2}{2\mu_0}
+$$
+
+<p>Where $B$ is the magnetic field strength and $\mu_0$ is the permeability of free space, can provide additional support against stripping. Furthermore, magnetic draping can create a protective layer around the galaxy, modifying the effective ram pressure.</p>
+
+<p>The interaction between the galaxy's magnetic field and the ICM's field can lead to complex dynamics, including magnetic reconnection events that can heat the gas and potentially enhance or inhibit stripping depending on the field configuration.</p>
+
+<h3>3.3 Turbulence and Viscosity</h3>
+<p>The Reynolds number in the ICM-ISM interaction region is typically very high, indicating highly turbulent flow. Turbulent viscosity can be estimated using models like the Smagorinsky model:</p>
+
+$$
+\nu_t = (C_s \Delta)^2 \sqrt{2S_{ij}S_{ij}}
+$$
+
+<p>Where $\nu_t$ is the turbulent viscosity, $C_s$ is the Smagorinsky constant, $\Delta$ is the filter width, and $S_{ij}$ is the strain rate tensor. Turbulence can enhance mixing and stripping, but it can also lead to the formation of eddies that can temporarily trap gas, complicating the stripping process.</p>
+
+<h2>4. Quantitative Analysis of Stripping</h2>
+<h3>4.1 Stripping Radius</h3>
+<p>The stripping radius, beyond which gas is removed from the galaxy, can be estimated by equating the ram pressure to the gravitational restoring force:</p>
+
+$$
+R_{\text{strip}} = \frac{G M_{\text{disk}}(R) \Sigma_{\text{gas}}(R)}{v^2 \rho_{\text{ICM}}}
+$$
+
+<p>Where $M_{\text{disk}}(R)$ is the enclosed disk mass at radius $R$. This radius depends on the galaxy's mass distribution, gas surface density, and the ICM properties. The stripping process typically proceeds from the outside in, as the outer regions of galaxies have lower surface densities and are thus more susceptible to stripping.</p>
+
+<h3>4.2 Mass Loss Rate</h3>
+<p>The mass loss rate due to ram pressure stripping can be approximated as:</p>
+
+$$
+\dot{M} \approx \pi R_{\text{strip}}^2 \rho_{\text{ISM}} v
+$$
+
+<p>Where $\rho_{\text{ISM}}$ is the density of the stripped ISM. This rate can vary significantly depending on the galaxy's properties and its trajectory through the cluster.</p>
+
+<h2>5. Observational Signatures and Diagnostics</h2>
+<h3>5.1 X-ray Emission</h3>
+<p>The stripped gas, heated by shocks and mixing with the ICM, can emit in X-rays. The X-ray luminosity $L_X$ can be estimated using the bremsstrahlung emission:</p>
+
+$$
+L_X \propto n_e^2 T^{1/2} V
+$$
+
+<p>Where $n_e$ is the electron density, $T$ is the temperature, and $V$ is the emitting volume. X-ray observations can reveal the morphology of the stripped gas and provide insights into its temperature and density.</p>
+
+<h3>5.2 H I and CO Observations</h3>
+<p>The distribution of neutral hydrogen (H I) and molecular gas (traced by CO) can be used to map the extent of stripping. The H I deficiency parameter is defined as:</p>
+
+$$
+\text{DEF}_{\text{HI}} = \log[M_{\text{HI,expected}}/M_{\text{HI,observed}}]
+$$
+
+<p>Where $M_{\text{HI,expected}}$ is calculated based on the galaxy's optical properties in isolation. This parameter quantifies the degree of gas loss due to environmental effects, including ram pressure stripping.</p>
+
+<h2>6. Numerical Simulations</h2>
+<p>Modern hydrodynamical simulations, such as those using adaptive mesh refinement (AMR) or smoothed particle hydrodynamics (SPH), have greatly advanced our understanding of ram pressure stripping. These simulations solve the compressible Euler equations:</p>
+
+$$
+\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{v}) = 0
+$$
+$$
+\frac{\partial (\rho \mathbf{v})}{\partial t} + \nabla \cdot (\rho \mathbf{v} \otimes \mathbf{v} + P\mathbf{I}) = \rho \mathbf{g}
+$$
+$$
+\frac{\partial E}{\partial t} + \nabla \cdot [(E + P)\mathbf{v}] = \rho \mathbf{v} \cdot \mathbf{g}
+$$
+
+<p>Where $\rho$ is density, $\mathbf{v}$ is velocity, $P$ is pressure, $E$ is total energy density, and $\mathbf{g}$ is the gravitational acceleration. These simulations can capture the complex interplay between hydrodynamics, gravity, and other physical processes, providing detailed insights into the stripping process.</p>
+
+<h2>7. Conclusion and Future Directions</h2>
+<p>Ram pressure stripping is a complex phenomenon involving the interplay of various physical processes across multiple scales. While significant progress has been made in understanding this mechanism, several open questions remain:</p>
+<ol>
+    <li>The role of magnetic fields in regulating stripping efficiency, particularly in the context of cosmic ray transport and their impact on the multiphase ISM.</li>
+    <li>The impact of AGN feedback on the ram pressure stripping process, including how outflows and jets interact with the stripping gas.</li>
+    <li>The interplay between ram pressure stripping and other environmental effects like galaxy harassment and tidal stripping, and how these combined processes shape galaxy evolution in dense environments.</li>
+    <li>The detailed physics of gas re-accretion and the potential for star formation in stripped gas tails.</li>
+</ol>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">TIL Physics 03: The Baldwin effect in Active Galactic Nuclei</title><link href="http://localhost:4000/tilphysics/2024/09/11/til-03.html" rel="alternate" type="text/html" title="TIL Physics 03: The Baldwin effect in Active Galactic Nuclei" /><published>2024-09-11T01:15:13+05:30</published><updated>2024-09-11T01:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/11/til-03</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/11/til-03.html"><![CDATA[<p>The Baldwin effect, a fundamental phenomenon in quasar and active galactic nuclei (AGN) astrophysics, describes an inverse correlation between the equivalent width of specific broad emission lines, primarily C IV λ1549, and the continuum luminosity of the source. First observed by <a href="https://ui.adsabs.harvard.edu/abs/1977ApJ...214..679B/abstract" target=None>Jack Baldwin</a> in 1977, this effect provides critical insights into the physical processes occurring in the vicinity of supermassive black holes (SMBHs) at galactic centers. The relationship manifests as a decrease in emission line strength relative to the continuum as the overall luminosity of the AGN increases.</p>
 
 <h2>Physical Mechanisms</h2>
 
