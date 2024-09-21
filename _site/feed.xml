@@ -1,234 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/tilphysics/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/tilphysics/" rel="alternate" type="text/html" /><updated>2024-09-21T15:42:46+05:30</updated><id>http://localhost:4000/tilphysics/feed.xml</id><title type="html">Today I Learned (TIL) Physics</title><subtitle>Today I Learned (TIL) Physics</subtitle><author><name>Vivek Kumar Jha</name></author><entry><title type="html">TIL Physics 04: The Blandford-Znajek Mechanism</title><link href="http://localhost:4000/tilphysics/2024/09/12/til-04.html" rel="alternate" type="text/html" title="TIL Physics 04: The Blandford-Znajek Mechanism" /><published>2024-09-12T08:15:13+05:30</published><updated>2024-09-12T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/12/til-04</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/12/til-04.html"><![CDATA[<h3>1. Introduction</h3>
-
-<p>The <a href="https://ui.adsabs.harvard.edu/abs/1977MNRAS.179..433B/abstract"target=None>Blandford-Znajek (BZ) mechanism </a>, proposed by Roger Blandford and Roman Znajek in 1977, is a cornerstone in theoretical astrophysics, offering a framework to explain the formation and energy extraction of relativistic jets from rotating black holes. Active Galactic Nuclei (AGN) are among the most energetic phenomena in the universe, and the BZ mechanism provides a model for how rotational energy from a black hole can be converted into the powerful, highly collimated jets observed in many AGN systems.</p>
-
-<h3>2. Theoretical Foundation</h3>
-
-
-<p>The BZ mechanism is intimately connected to the physics of rotating black holes described by the Kerr metric, which governs the spacetime geometry around a spinning black hole. The Kerr metric accounts for the frame-dragging effect, a key ingredient for the BZ process. In this setup, the rotating spacetime combined with the magnetic field leads to electromagnetic induction, which is central to the BZ mechanism.
-
-In addition to the Kerr geometry, the behavior of electromagnetic fields in the vicinity of the rotating black hole plays a crucial role. Maxwell’s equations in curved spacetime govern how magnetic fields and currents evolve near the black hole, forming the basis for energy extraction.</p>
-
-<h3>The Blandford-Znajek Process</h3>
-
-<p>Blandford-Znajek (BZ) mechanism relies on three key components: a rotating black hole, a magnetized accretion disk, and a magnetic field threading the event horizon. Together, these elements enable the extraction of energy from the black hole and the formation of relativistic jets.</p> 
-
-<h4>Rotating Black Hole and Frame-Dragging</h4>
-<p>The first crucial element is the rotating black hole, described by the Kerr metric. The black hole's rotation causes a phenomenon known as frame-dragging, where spacetime near the black hole is "twisted" in the direction of the rotation. This effect plays a pivotal role in the BZ mechanism because it allows the black hole's rotational energy to be tapped into.
-
-As the black hole spins, the frame-dragging effect influences the behavior of nearby particles and magnetic fields, which are dragged along with the rotation. This effect, combined with a magnetic field near the event horizon, is essential for generating the electric fields needed to accelerate charged particles and power the jets.</p>
-
-<h4>Magnetized Accretion Disk</h4>
-<p>The accretion disk is a structure of gas and plasma that spirals inward toward the black hole. As the material in the disk moves closer to the black hole, it becomes highly magnetized due to the complex interaction between the plasma and magnetic fields. The accretion disk provides the fuel for the system and plays a vital role in shaping the magnetic field that threads the black hole’s event horizon.
-
-The disk's plasma is a key source of charged particles, which interact with the magnetic fields in the vicinity of the black hole. As material accretes onto the black hole, it enhances the magnetic field strength, and this magnetic field, in turn, connects to the black hole’s horizon, facilitating energy extraction via the BZ mechanism. The accretion process also helps establish the collimated structure of the jets that emerge from the system.</p>
-
-<h4>Magnetic Field and Electromagnetic Induction</h4>
-<p>A large-scale magnetic field threading the black hole's event horizon is the third critical component. The origin of this magnetic field is likely tied to the accretion disk, which generates and amplifies magnetic fields through magnetohydrodynamic (MHD) processes.
-
-The frame-dragging effect of the rotating black hole twists these magnetic field lines, inducing an electric field near the event horizon. This electromagnetic induction is essential for the BZ process. The induced electric field accelerates charged particles along the magnetic field lines, creating relativistic jets. These jets are highly collimated and travel along the black hole’s rotation axis.
-
-The energy extraction from the black hole's rotation powers these jets, and the efficiency of this process increases with both the black hole's spin and the strength of the magnetic field threading the horizon. </p>
-
-
-<h3>4. Numerical Simulations and Recent Developments</h3>
-
-<p>In recent years, general relativistic magnetohydrodynamic (GRMHD) simulations have provided new insights into the BZ mechanism. These simulations reveal a spine-sheath structure in BZ-driven jets, where a fast, highly relativistic core (spine) is surrounded by a slower-moving outer layer (sheath). The inner region of the jet is powered directly by the BZ mechanism, while the outer regions may be influenced by the surrounding accretion flow.
-
-The structure and power of the jet depend heavily on the configuration of the magnetic field. A split-monopole magnetic field configuration, where the magnetic field lines emanate symmetrically from the black hole, is particularly efficient for energy extraction. For black holes with high spins, jet power scales steeply with spin, showing a near-quadratic dependence for moderate spins, but rising rapidly for higher values.</p>
-
-<h3> 5. Observational Evidence</h3>
-
-<p>A number of observational signatures provide strong support for the BZ mechanism as a source of AGN jet power. For instance, observations show a strong correlation between jet power and black hole spin in AGN, consistent with the BZ model’s predictions. Furthermore, the detection of very high Lorentz factors in AGN jets aligns with the relativistic velocities expected from BZ-driven outflows.
-
-Additionally, Faraday rotation measurements of AGN jets, which probe the alignment of magnetic fields, suggest the presence of strong, ordered magnetic fields threading the jets—another prediction of the BZ mechanism. Perhaps most compelling is the recent Event Horizon Telescope (EHT) imaging of the M87 galaxy's jet base, which reveals a morphology and structure that strongly support a BZ-type origin for the jet.</p>
-
-<h3>6. Challenges and Open Questions</h3>
-
-Despite its successes, several challenges and unanswered questions remain in fully understanding the BZ mechanism:
-
-<ul>
-<li>Magnetic Field Origin: While the BZ mechanism requires strong, ordered magnetic fields, the exact processes responsible for generating and sustaining these fields in AGN are not fully understood.</li>
-  
-<li>Jet Composition: The composition of AGN jets, whether primarily leptonic (electron-positron pairs) or hadronic (protons and heavier ions), remains an area of active debate. The BZ mechanism can, in principle, work with either, but detailed understanding is needed.</li>
-
-
-<li>Jet Stability: Jets remain collimated over vast distances (up to millions of light-years). The mechanisms that ensure their stability over such distances, and their interaction with surrounding environments, are still not completely clear.</li>
-
-<li>Accretion Dynamics: The interplay between the BZ mechanism and accretion flows remains a complex problem. Accretion flows can influence the magnetic field structure and jet dynamics, complicating the theoretical picture.</li>
-
-
-</ul>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[1. Introduction]]></summary></entry><entry><title type="html">TIL Physics 05: Reionization of the Universe</title><link href="http://localhost:4000/tilphysics/2024/09/12/til-05.html" rel="alternate" type="text/html" title="TIL Physics 05: Reionization of the Universe" /><published>2024-09-12T08:15:13+05:30</published><updated>2024-09-12T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/12/til-05</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/12/til-05.html"><![CDATA[<main>
-        <section id="introduction">
-            <h2>1. Introduction: Cosmic Ionization History</h2>
-            <p>The reionization epoch marks a fundamental transition in the universe's evolution, characterized by the transformation of the intergalactic medium (IGM) from a neutral to an ionized state. This process occurred in two distinct phases: hydrogen reionization and helium reionization, each driven by different astrophysical phenomena and having profound implications for structure formation and observational cosmology.</p>
-        </section>
-
-        <section id="recombination">
-            <h2>2. Recombination and the Dark Ages</h2>
-            <p>Following the Big Bang, the universe existed in a hot, dense, and ionized state. At redshift z ≈ 1100 (approximately 380,000 years after the Big Bang), as the universe expanded and cooled to T ≈ 3000 K, protons and electrons recombined to form neutral hydrogen. This process, described by the Saha equation, marked the beginning of the "Dark Ages." During this period, the universe was dominated by neutral hydrogen, making it opaque to ultraviolet radiation.</p>
-        </section>
-
-        <section id="hydrogen-reionization">
-            <h2>3. Hydrogen Reionization: The Cosmic Dawn</h2>
-            
-            <h3>3.1 Population III Stars and Early Galaxies</h3>
-            <p>The reionization of hydrogen began with the formation of Population III stars around z ≈ 20-30. These metal-free stars, with masses potentially reaching 100-1000 M☉ and effective temperatures of T_eff ≈ 10^5 K, produced a hard UV spectrum capable of ionizing hydrogen efficiently. The ionizing photon production rate of these early sources is crucial for understanding the progress of reionization.</p>
-
-            <h3>3.2 Stromgren Spheres and Bubble Growth</h3>
-            <p>The growth of ionized regions around these first sources can be conceptualized using the Stromgren sphere formalism. Initially, these ionized bubbles are confined by the balance between ionization and recombination rates. As sources become more numerous and bubbles begin to overlap, the reionization process accelerates, leading to a percolation phase where most of the IGM becomes ionized.</p>
-
-            <h3>3.3 Inhomogeneous Reionization and the Cosmic Web</h3>
-            <p>The reionization process was highly inhomogeneous, influenced by the underlying density field of the cosmic web. Overdense regions, which hosted the first sources, ionized first, while underdense voids remained neutral for longer periods. This inhomogeneity has significant implications for the observational signatures of reionization.</p>
-
-            <h3>3.4 Completion of Hydrogen Reionization</h3>
-            <p>Observations indicate that hydrogen reionization was largely complete by redshift z ≈ 6, approximately 1 billion years after the Big Bang. This conclusion is primarily based on the Gunn-Peterson trough observed in high-redshift quasar spectra. The absence of Gunn-Peterson absorption at z &lt; 6 suggests that the IGM was highly ionized by this time, with neutral fractions below ~10^-4.</p>
-        </section>
-
-        <section id="helium-reionization">
-            <h2>4. Helium Reionization: The Role of Quasars</h2>
-            <p>While hydrogen and HeI were ionized by the first stars and galaxies, the complete ionization of HeII required more energetic photons, primarily provided by quasars. The HeII reionization epoch, occurring at lower redshifts (z ≈ 3-4), had significant impacts on the thermal history of the IGM.</p>
-
-            <h3>4.1 Quasar Emission Spectra and HeII Ionization</h3>
-            <p>Quasars, powered by accreting supermassive black holes, emit a power-law spectrum typically modeled with a spectral index α ≈ 1.5 - 2 for the extreme UV and soft X-ray regime relevant for HeII ionization. The HeII ionization cross-section peaks at 54.4 eV and decreases as ν^(-3) at higher energies, making quasars with harder spectra more efficient at ionizing HeII.</p>
-
-            <h3>4.2 IGM Heating During Helium Reionization</h3>
-            <p>The photoionization of HeII deposited significant energy into the IGM, raising its temperature to T ≈ 20,000 - 30,000 K. This heating had profound effects on the IGM's equation of state and the Lyman-α forest observations.</p>
-        </section>
-
-        <section id="advanced-concepts">
-            <h2>5. Advanced Reionization Physics</h2>
-            
-            <h3>5.1 Non-equilibrium Ionization Kinetics</h3>
-            <p>The detailed ionization state of the IGM during reionization involves non-equilibrium processes. The evolution of species fractions (HI, HII, HeI, HeII, HeIII) is governed by a set of coupled differential equations involving photoionization, collisional ionization, and recombination processes.</p>
-
-            <h3>5.2 Radiative Transfer in Reionization</h3>
-            <p>Accurate modeling of reionization requires solving the radiative transfer equation in complex 3D geometries. Various numerical methods have been developed, including ray-tracing algorithms, moment methods (e.g., M1 closure), and Monte Carlo techniques. These methods account for effects such as shadowing, spectral hardening, and source clustering.</p>
-
-            <h3>5.3 21cm Cosmology</h3>
-            <p>The 21cm hyperfine transition of neutral hydrogen provides a powerful probe of the reionization epoch. The spin temperature of this transition is influenced by coupling to the CMB temperature, collisions, and the Wouthuysen-Field effect. The resulting 21cm brightness temperature relative to the CMB serves as a sensitive measure of the neutral fraction during reionization.</p>
-        </section>
-
-        <section id="observational-probes">
-            <h2>6. Observational Probes of Reionization</h2>
-            <ul>
-                <li>Gunn-Peterson Trough: The complete absorption of flux blueward of Lyman-α in quasar spectra at z &gt; 6, indicating a significantly neutral IGM.</li>
-                <li>Thomson scattering optical depth in CMB polarization</li>
-                <li>Kinetic Sunyaev-Zel'dovich effect</li>
-                <li>Lyman-α emitter surveys</li>
-                
-            </ul>
-            <p>Each of these probes provides complementary information about the timing, duration, and morphology of the reionization process.</p>
-        </section>
-
-        <section id="frontiers">
-            <h2>7. Current Frontiers and Open Questions</h2>
-            <ul>
-                <li>Relative contributions of various source populations (Pop III stars, early galaxies, mini-quasars) to reionization</li>
-                <li>Impact of reionization on galaxy formation, particularly for low-mass halos</li>
-                <li>Detailed topology of reionization and its connection to the underlying cosmic web</li>
-                <li>Nature of early quasars and their role in HeII reionization</li>
-                <li>Detection and characterization of the 21cm signal from the Epoch of Reionization</li>
-                <li>Influence of magnetic fields generated during reionization on subsequent structure formation</li>
-            </ul>
-        </section>
-
-        <section id="conclusion">
-            <h2>8. Conclusion</h2>
-            <p>The reionization of the universe represents a critical phase transition in cosmic history, intricately linked to the formation of the first stars, galaxies, and quasars. Understanding this epoch requires a synthesis of astrophysics, plasma physics, and cosmology. Ongoing observations, particularly from next-generation telescopes like the James Webb Space Telescope (JWST) and the upcoming Square Kilometre Array (SKA), promise to refine our understanding of this pivotal era, potentially revolutionizing our view of the early universe and the processes that shaped the cosmos we observe today.</p>
-        </section>
-    </main>
-
-  
-</body>
-</html>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[1. Introduction: Cosmic Ionization History The reionization epoch marks a fundamental transition in the universe's evolution, characterized by the transformation of the intergalactic medium (IGM) from a neutral to an ionized state. This process occurred in two distinct phases: hydrogen reionization and helium reionization, each driven by different astrophysical phenomena and having profound implications for structure formation and observational cosmology.]]></summary></entry><entry><title type="html">TIL Physics 06: The Gunn Peterson Effect</title><link href="http://localhost:4000/tilphysics/2024/09/12/til-06.html" rel="alternate" type="text/html" title="TIL Physics 06: The Gunn Peterson Effect" /><published>2024-09-12T08:15:13+05:30</published><updated>2024-09-12T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/12/til-06</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/12/til-06.html"><![CDATA[<body>
-    <header>
-        <h1>The Gunn-Peterson Effect: Probing Cosmic Reionization</h1>
-    </header>
-
-   
-    <main>
-        <section id="introduction">
-            <h2>1. Introduction</h2>
-            <p>The Gunn-Peterson effect, predicted by <a href="https://ui.adsabs.harvard.edu/abs/1965ApJ...142.1633G/abstract"target=blank>James Gunn and Bruce Peterson in 1965</a>, is a key observational probe in cosmology, particularly for studying the epoch of reionization. This phenomenon manifests as a broad absorption trough in the spectra of distant quasars, providing crucial insights into the ionization state of the intergalactic medium (IGM) at high redshifts.</p>
-        </section>
-
-        <figure>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Gunn%E2%80%93Peterson_trough.gif" alt="Gunn-Peterson Trough GIF" width="500">
-            <figcaption><i>The Gunn Peterson trough seen in a high redshift Quasar. Image courtesy: Wikimedia Commons.</i></figcaption>
-          </figure>
-          
-          
-
-        <section id="physical-basis">
-            <h2>2. Physical Basis</h2>
-            <p>The Gunn-Peterson effect arises from the resonant scattering of Lyman-α photons by neutral hydrogen in the IGM. As light from a distant quasar travels through the universe, it is continuously redshifted. When this light reaches the Lyman-α resonance frequency in the rest frame of intervening neutral hydrogen, it can be absorbed, creating an absorption feature in the observed spectrum.</p>
-            
-            <h3>2.1 Optical Depth</h3>
-            <p>The strength of the Gunn-Peterson absorption is characterized by the optical depth τ_GP. In a homogeneous IGM, this is given by:</p>
-
-            <div class="formula">
-                τ_GP ≈ 6.45 × 10^5 × (Ω_b h^2 / 0.02) × [(1+z) / 7]^(3/2) × x_HI
-            </div>
-
-            <p>Here, Ω_b is the baryon density parameter, h is the reduced Hubble constant, z is the redshift, and x_HI is the neutral hydrogen fraction. The strong dependence on x_HI makes the Gunn-Peterson effect a sensitive probe of the IGM's ionization state.</p>
-        </section>
-
-        <section id="observational-features">
-            <h2>3. Observational Features</h2>
-            <p>The Gunn-Peterson effect manifests in quasar spectra as:</p>
-            <ul>
-                <li>A complete absorption trough blueward of the Lyman-α emission line in the quasar's rest frame.</li>
-                <li>An abrupt onset of transmission at lower redshifts, known as the Gunn-Peterson trough edge.</li>
-                <li>Variations in the trough's structure due to inhomogeneities in the IGM.</li>
-            </ul>
-            
-            <h3>3.1 Lyman Series Absorption</h3>
-            <p>While the Lyman-α transition is the most prominent, absorption due to higher-order Lyman series transitions (Lyman-β, Lyman-γ, etc.) can also be observed, providing additional constraints on the IGM properties.</p>
-        </section>
-
-        <section id="implications">
-            <h2>4. Implications for Reionization</h2>
-            <p>The Gunn-Peterson effect has profound implications for our understanding of cosmic reionization:</p>
-            
-            <h3>4.1 End of Reionization</h3>
-            <p>The absence of a complete Gunn-Peterson trough in quasar spectra at z &lt; 6 suggests that hydrogen reionization was largely complete by this epoch. Even a small neutral fraction (x_HI ~ 10^-4) is sufficient to produce significant absorption.</p>
-            
-            <h3>4.2 Reionization Timeline</h3>
-            <p>The evolution of the Gunn-Peterson optical depth with redshift constrains the timeline of reionization. A rapid increase in τ_GP around z ~ 6 indicates a swift change in the IGM's ionization state.</p>
-            
-            <h3>4.3 Inhomogeneous Reionization</h3>
-            <p>Variations in the Gunn-Peterson trough along different lines of sight provide evidence for the inhomogeneous nature of reionization, with some regions ionizing earlier than others.</p>
-        </section>
-
-        <section id="limitations">
-            <h2>5. Limitations and Challenges</h2>
-            <p>While powerful, the Gunn-Peterson effect has some limitations:</p>
-            <ul>
-                <li>Saturation: The effect saturates at relatively low neutral fractions, making it challenging to probe the earliest stages of reionization.</li>
-                <li>Line-of-sight variations: Interpretation is complicated by the fact that each quasar provides only a single line-of-sight through the IGM.</li>
-                <li>Contamination: Distinguishing the smooth Gunn-Peterson absorption from the Lyman-α forest and damped Lyman-α systems can be challenging.</li>
-            </ul>
-        </section>
-
-        <section id="advanced-topics">
-            <h2>6. Advanced Topics</h2>
-            
-            <h3>6.1 Dark Gaps Analysis</h3>
-            <p>Analysis of "dark gaps" (extended regions of zero transmitted flux) in quasar spectra can provide additional constraints on the neutral fraction during the late stages of reionization.</p>
-            
-            <h3>6.2 Proximity Effect</h3>
-            <p>The ionizing radiation from the quasar itself creates a highly ionized region in its vicinity, known as the proximity effect. This must be accounted for in Gunn-Peterson analysis.</p>
-            
-          
-        </section>
-
-       
-    </main>
-
-
-</body>
-</html>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[The Gunn-Peterson Effect: Probing Cosmic Reionization]]></summary></entry><entry><title type="html">TIL Physics 07: Ram Pressure Stripping</title><link href="http://localhost:4000/tilphysics/2024/09/12/til-07.html" rel="alternate" type="text/html" title="TIL Physics 07: Ram Pressure Stripping" /><published>2024-09-12T08:15:13+05:30</published><updated>2024-09-12T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/12/til-07</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/12/til-07.html"><![CDATA[<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/tilphysics/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/tilphysics/" rel="alternate" type="text/html" /><updated>2024-09-21T15:58:41+05:30</updated><id>http://localhost:4000/tilphysics/feed.xml</id><title type="html">Today I Learned (TIL) Physics</title><subtitle>Today I Learned (TIL) Physics</subtitle><author><name>Vivek Kumar Jha</name></author><entry><title type="html">TIL Physics 08:Inhomogeneties in AGN accretion disks</title><link href="http://localhost:4000/tilphysics/2024/09/16/til-08.html" rel="alternate" type="text/html" title="TIL Physics 08:Inhomogeneties in AGN accretion disks" /><published>2024-09-16T08:15:13+05:30</published><updated>2024-09-16T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/16/til-08</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/16/til-08.html"><![CDATA[]]></content><author><name>Vivek Kumar Jha</name></author></entry><entry><title type="html">TIL Physics 07: Ram Pressure Stripping</title><link href="http://localhost:4000/tilphysics/2024/09/15/til-07.html" rel="alternate" type="text/html" title="TIL Physics 07: Ram Pressure Stripping" /><published>2024-09-15T08:15:13+05:30</published><updated>2024-09-15T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/15/til-07</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/15/til-07.html"><![CDATA[<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
@@ -361,7 +131,237 @@ $$
     <li>The impact of AGN feedback on the ram pressure stripping process, including how outflows and jets interact with the stripping gas.</li>
     <li>The interplay between ram pressure stripping and other environmental effects like galaxy harassment and tidal stripping, and how these combined processes shape galaxy evolution in dense environments.</li>
     <li>The detailed physics of gas re-accretion and the potential for star formation in stripped gas tails.</li>
-</ol>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">TIL Physics 03: The Baldwin effect in Active Galactic Nuclei</title><link href="http://localhost:4000/tilphysics/2024/09/11/til-03.html" rel="alternate" type="text/html" title="TIL Physics 03: The Baldwin effect in Active Galactic Nuclei" /><published>2024-09-11T01:15:13+05:30</published><updated>2024-09-11T01:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/11/til-03</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/11/til-03.html"><![CDATA[<p>The Baldwin effect, a fundamental phenomenon in quasar and active galactic nuclei (AGN) astrophysics, describes an inverse correlation between the equivalent width of specific broad emission lines, primarily C IV λ1549, and the continuum luminosity of the source. First observed by <a href="https://ui.adsabs.harvard.edu/abs/1977ApJ...214..679B/abstract" target=None>Jack Baldwin</a> in 1977, this effect provides critical insights into the physical processes occurring in the vicinity of supermassive black holes (SMBHs) at galactic centers. The relationship manifests as a decrease in emission line strength relative to the continuum as the overall luminosity of the AGN increases.</p>
+</ol>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">TIL Physics 06: The Gunn Peterson Effect</title><link href="http://localhost:4000/tilphysics/2024/09/14/til-06.html" rel="alternate" type="text/html" title="TIL Physics 06: The Gunn Peterson Effect" /><published>2024-09-14T08:15:13+05:30</published><updated>2024-09-14T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/14/til-06</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/14/til-06.html"><![CDATA[<body>
+    <header>
+        <h1>The Gunn-Peterson Effect: Probing Cosmic Reionization</h1>
+    </header>
+
+   
+    <main>
+        <section id="introduction">
+            <h2>1. Introduction</h2>
+            <p>The Gunn-Peterson effect, predicted by <a href="https://ui.adsabs.harvard.edu/abs/1965ApJ...142.1633G/abstract"target=blank>James Gunn and Bruce Peterson in 1965</a>, is a key observational probe in cosmology, particularly for studying the epoch of reionization. This phenomenon manifests as a broad absorption trough in the spectra of distant quasars, providing crucial insights into the ionization state of the intergalactic medium (IGM) at high redshifts.</p>
+        </section>
+
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Gunn%E2%80%93Peterson_trough.gif" alt="Gunn-Peterson Trough GIF" width="500">
+            <figcaption><i>The Gunn Peterson trough seen in a high redshift Quasar. Image courtesy: Wikimedia Commons.</i></figcaption>
+          </figure>
+          
+          
+
+        <section id="physical-basis">
+            <h2>2. Physical Basis</h2>
+            <p>The Gunn-Peterson effect arises from the resonant scattering of Lyman-α photons by neutral hydrogen in the IGM. As light from a distant quasar travels through the universe, it is continuously redshifted. When this light reaches the Lyman-α resonance frequency in the rest frame of intervening neutral hydrogen, it can be absorbed, creating an absorption feature in the observed spectrum.</p>
+            
+            <h3>2.1 Optical Depth</h3>
+            <p>The strength of the Gunn-Peterson absorption is characterized by the optical depth τ_GP. In a homogeneous IGM, this is given by:</p>
+
+            <div class="formula">
+                τ_GP ≈ 6.45 × 10^5 × (Ω_b h^2 / 0.02) × [(1+z) / 7]^(3/2) × x_HI
+            </div>
+
+            <p>Here, Ω_b is the baryon density parameter, h is the reduced Hubble constant, z is the redshift, and x_HI is the neutral hydrogen fraction. The strong dependence on x_HI makes the Gunn-Peterson effect a sensitive probe of the IGM's ionization state.</p>
+        </section>
+
+        <section id="observational-features">
+            <h2>3. Observational Features</h2>
+            <p>The Gunn-Peterson effect manifests in quasar spectra as:</p>
+            <ul>
+                <li>A complete absorption trough blueward of the Lyman-α emission line in the quasar's rest frame.</li>
+                <li>An abrupt onset of transmission at lower redshifts, known as the Gunn-Peterson trough edge.</li>
+                <li>Variations in the trough's structure due to inhomogeneities in the IGM.</li>
+            </ul>
+            
+            <h3>3.1 Lyman Series Absorption</h3>
+            <p>While the Lyman-α transition is the most prominent, absorption due to higher-order Lyman series transitions (Lyman-β, Lyman-γ, etc.) can also be observed, providing additional constraints on the IGM properties.</p>
+        </section>
+
+        <section id="implications">
+            <h2>4. Implications for Reionization</h2>
+            <p>The Gunn-Peterson effect has profound implications for our understanding of cosmic reionization:</p>
+            
+            <h3>4.1 End of Reionization</h3>
+            <p>The absence of a complete Gunn-Peterson trough in quasar spectra at z &lt; 6 suggests that hydrogen reionization was largely complete by this epoch. Even a small neutral fraction (x_HI ~ 10^-4) is sufficient to produce significant absorption.</p>
+            
+            <h3>4.2 Reionization Timeline</h3>
+            <p>The evolution of the Gunn-Peterson optical depth with redshift constrains the timeline of reionization. A rapid increase in τ_GP around z ~ 6 indicates a swift change in the IGM's ionization state.</p>
+            
+            <h3>4.3 Inhomogeneous Reionization</h3>
+            <p>Variations in the Gunn-Peterson trough along different lines of sight provide evidence for the inhomogeneous nature of reionization, with some regions ionizing earlier than others.</p>
+        </section>
+
+        <section id="limitations">
+            <h2>5. Limitations and Challenges</h2>
+            <p>While powerful, the Gunn-Peterson effect has some limitations:</p>
+            <ul>
+                <li>Saturation: The effect saturates at relatively low neutral fractions, making it challenging to probe the earliest stages of reionization.</li>
+                <li>Line-of-sight variations: Interpretation is complicated by the fact that each quasar provides only a single line-of-sight through the IGM.</li>
+                <li>Contamination: Distinguishing the smooth Gunn-Peterson absorption from the Lyman-α forest and damped Lyman-α systems can be challenging.</li>
+            </ul>
+        </section>
+
+        <section id="advanced-topics">
+            <h2>6. Advanced Topics</h2>
+            
+            <h3>6.1 Dark Gaps Analysis</h3>
+            <p>Analysis of "dark gaps" (extended regions of zero transmitted flux) in quasar spectra can provide additional constraints on the neutral fraction during the late stages of reionization.</p>
+            
+            <h3>6.2 Proximity Effect</h3>
+            <p>The ionizing radiation from the quasar itself creates a highly ionized region in its vicinity, known as the proximity effect. This must be accounted for in Gunn-Peterson analysis.</p>
+            
+          
+        </section>
+
+       
+    </main>
+
+
+</body>
+</html>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[The Gunn-Peterson Effect: Probing Cosmic Reionization]]></summary></entry><entry><title type="html">TIL Physics 05: Reionization of the Universe</title><link href="http://localhost:4000/tilphysics/2024/09/13/til-05.html" rel="alternate" type="text/html" title="TIL Physics 05: Reionization of the Universe" /><published>2024-09-13T08:15:13+05:30</published><updated>2024-09-13T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/13/til-05</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/13/til-05.html"><![CDATA[<main>
+        <section id="introduction">
+            <h2>1. Introduction: Cosmic Ionization History</h2>
+            <p>The reionization epoch marks a fundamental transition in the universe's evolution, characterized by the transformation of the intergalactic medium (IGM) from a neutral to an ionized state. This process occurred in two distinct phases: hydrogen reionization and helium reionization, each driven by different astrophysical phenomena and having profound implications for structure formation and observational cosmology.</p>
+        </section>
+
+        <section id="recombination">
+            <h2>2. Recombination and the Dark Ages</h2>
+            <p>Following the Big Bang, the universe existed in a hot, dense, and ionized state. At redshift z ≈ 1100 (approximately 380,000 years after the Big Bang), as the universe expanded and cooled to T ≈ 3000 K, protons and electrons recombined to form neutral hydrogen. This process, described by the Saha equation, marked the beginning of the "Dark Ages." During this period, the universe was dominated by neutral hydrogen, making it opaque to ultraviolet radiation.</p>
+        </section>
+
+        <section id="hydrogen-reionization">
+            <h2>3. Hydrogen Reionization: The Cosmic Dawn</h2>
+            
+            <h3>3.1 Population III Stars and Early Galaxies</h3>
+            <p>The reionization of hydrogen began with the formation of Population III stars around z ≈ 20-30. These metal-free stars, with masses potentially reaching 100-1000 M☉ and effective temperatures of T_eff ≈ 10^5 K, produced a hard UV spectrum capable of ionizing hydrogen efficiently. The ionizing photon production rate of these early sources is crucial for understanding the progress of reionization.</p>
+
+            <h3>3.2 Stromgren Spheres and Bubble Growth</h3>
+            <p>The growth of ionized regions around these first sources can be conceptualized using the Stromgren sphere formalism. Initially, these ionized bubbles are confined by the balance between ionization and recombination rates. As sources become more numerous and bubbles begin to overlap, the reionization process accelerates, leading to a percolation phase where most of the IGM becomes ionized.</p>
+
+            <h3>3.3 Inhomogeneous Reionization and the Cosmic Web</h3>
+            <p>The reionization process was highly inhomogeneous, influenced by the underlying density field of the cosmic web. Overdense regions, which hosted the first sources, ionized first, while underdense voids remained neutral for longer periods. This inhomogeneity has significant implications for the observational signatures of reionization.</p>
+
+            <h3>3.4 Completion of Hydrogen Reionization</h3>
+            <p>Observations indicate that hydrogen reionization was largely complete by redshift z ≈ 6, approximately 1 billion years after the Big Bang. This conclusion is primarily based on the Gunn-Peterson trough observed in high-redshift quasar spectra. The absence of Gunn-Peterson absorption at z &lt; 6 suggests that the IGM was highly ionized by this time, with neutral fractions below ~10^-4.</p>
+        </section>
+
+        <section id="helium-reionization">
+            <h2>4. Helium Reionization: The Role of Quasars</h2>
+            <p>While hydrogen and HeI were ionized by the first stars and galaxies, the complete ionization of HeII required more energetic photons, primarily provided by quasars. The HeII reionization epoch, occurring at lower redshifts (z ≈ 3-4), had significant impacts on the thermal history of the IGM.</p>
+
+            <h3>4.1 Quasar Emission Spectra and HeII Ionization</h3>
+            <p>Quasars, powered by accreting supermassive black holes, emit a power-law spectrum typically modeled with a spectral index α ≈ 1.5 - 2 for the extreme UV and soft X-ray regime relevant for HeII ionization. The HeII ionization cross-section peaks at 54.4 eV and decreases as ν^(-3) at higher energies, making quasars with harder spectra more efficient at ionizing HeII.</p>
+
+            <h3>4.2 IGM Heating During Helium Reionization</h3>
+            <p>The photoionization of HeII deposited significant energy into the IGM, raising its temperature to T ≈ 20,000 - 30,000 K. This heating had profound effects on the IGM's equation of state and the Lyman-α forest observations.</p>
+        </section>
+
+        <section id="advanced-concepts">
+            <h2>5. Advanced Reionization Physics</h2>
+            
+            <h3>5.1 Non-equilibrium Ionization Kinetics</h3>
+            <p>The detailed ionization state of the IGM during reionization involves non-equilibrium processes. The evolution of species fractions (HI, HII, HeI, HeII, HeIII) is governed by a set of coupled differential equations involving photoionization, collisional ionization, and recombination processes.</p>
+
+            <h3>5.2 Radiative Transfer in Reionization</h3>
+            <p>Accurate modeling of reionization requires solving the radiative transfer equation in complex 3D geometries. Various numerical methods have been developed, including ray-tracing algorithms, moment methods (e.g., M1 closure), and Monte Carlo techniques. These methods account for effects such as shadowing, spectral hardening, and source clustering.</p>
+
+            <h3>5.3 21cm Cosmology</h3>
+            <p>The 21cm hyperfine transition of neutral hydrogen provides a powerful probe of the reionization epoch. The spin temperature of this transition is influenced by coupling to the CMB temperature, collisions, and the Wouthuysen-Field effect. The resulting 21cm brightness temperature relative to the CMB serves as a sensitive measure of the neutral fraction during reionization.</p>
+        </section>
+
+        <section id="observational-probes">
+            <h2>6. Observational Probes of Reionization</h2>
+            <ul>
+                <li>Gunn-Peterson Trough: The complete absorption of flux blueward of Lyman-α in quasar spectra at z &gt; 6, indicating a significantly neutral IGM.</li>
+                <li>Thomson scattering optical depth in CMB polarization</li>
+                <li>Kinetic Sunyaev-Zel'dovich effect</li>
+                <li>Lyman-α emitter surveys</li>
+                
+            </ul>
+            <p>Each of these probes provides complementary information about the timing, duration, and morphology of the reionization process.</p>
+        </section>
+
+        <section id="frontiers">
+            <h2>7. Current Frontiers and Open Questions</h2>
+            <ul>
+                <li>Relative contributions of various source populations (Pop III stars, early galaxies, mini-quasars) to reionization</li>
+                <li>Impact of reionization on galaxy formation, particularly for low-mass halos</li>
+                <li>Detailed topology of reionization and its connection to the underlying cosmic web</li>
+                <li>Nature of early quasars and their role in HeII reionization</li>
+                <li>Detection and characterization of the 21cm signal from the Epoch of Reionization</li>
+                <li>Influence of magnetic fields generated during reionization on subsequent structure formation</li>
+            </ul>
+        </section>
+
+        <section id="conclusion">
+            <h2>8. Conclusion</h2>
+            <p>The reionization of the universe represents a critical phase transition in cosmic history, intricately linked to the formation of the first stars, galaxies, and quasars. Understanding this epoch requires a synthesis of astrophysics, plasma physics, and cosmology. Ongoing observations, particularly from next-generation telescopes like the James Webb Space Telescope (JWST) and the upcoming Square Kilometre Array (SKA), promise to refine our understanding of this pivotal era, potentially revolutionizing our view of the early universe and the processes that shaped the cosmos we observe today.</p>
+        </section>
+    </main>
+
+  
+</body>
+</html>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[1. Introduction: Cosmic Ionization History The reionization epoch marks a fundamental transition in the universe's evolution, characterized by the transformation of the intergalactic medium (IGM) from a neutral to an ionized state. This process occurred in two distinct phases: hydrogen reionization and helium reionization, each driven by different astrophysical phenomena and having profound implications for structure formation and observational cosmology.]]></summary></entry><entry><title type="html">TIL Physics 04: The Blandford-Znajek Mechanism</title><link href="http://localhost:4000/tilphysics/2024/09/12/til-04.html" rel="alternate" type="text/html" title="TIL Physics 04: The Blandford-Znajek Mechanism" /><published>2024-09-12T08:15:13+05:30</published><updated>2024-09-12T08:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/12/til-04</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/12/til-04.html"><![CDATA[<h3>1. Introduction</h3>
+
+<p>The <a href="https://ui.adsabs.harvard.edu/abs/1977MNRAS.179..433B/abstract"target=None>Blandford-Znajek (BZ) mechanism </a>, proposed by Roger Blandford and Roman Znajek in 1977, is a cornerstone in theoretical astrophysics, offering a framework to explain the formation and energy extraction of relativistic jets from rotating black holes. Active Galactic Nuclei (AGN) are among the most energetic phenomena in the universe, and the BZ mechanism provides a model for how rotational energy from a black hole can be converted into the powerful, highly collimated jets observed in many AGN systems.</p>
+
+<h3>2. Theoretical Foundation</h3>
+
+
+<p>The BZ mechanism is intimately connected to the physics of rotating black holes described by the Kerr metric, which governs the spacetime geometry around a spinning black hole. The Kerr metric accounts for the frame-dragging effect, a key ingredient for the BZ process. In this setup, the rotating spacetime combined with the magnetic field leads to electromagnetic induction, which is central to the BZ mechanism.
+
+In addition to the Kerr geometry, the behavior of electromagnetic fields in the vicinity of the rotating black hole plays a crucial role. Maxwell’s equations in curved spacetime govern how magnetic fields and currents evolve near the black hole, forming the basis for energy extraction.</p>
+
+<h3>The Blandford-Znajek Process</h3>
+
+<p>Blandford-Znajek (BZ) mechanism relies on three key components: a rotating black hole, a magnetized accretion disk, and a magnetic field threading the event horizon. Together, these elements enable the extraction of energy from the black hole and the formation of relativistic jets.</p> 
+
+<h4>Rotating Black Hole and Frame-Dragging</h4>
+<p>The first crucial element is the rotating black hole, described by the Kerr metric. The black hole's rotation causes a phenomenon known as frame-dragging, where spacetime near the black hole is "twisted" in the direction of the rotation. This effect plays a pivotal role in the BZ mechanism because it allows the black hole's rotational energy to be tapped into.
+
+As the black hole spins, the frame-dragging effect influences the behavior of nearby particles and magnetic fields, which are dragged along with the rotation. This effect, combined with a magnetic field near the event horizon, is essential for generating the electric fields needed to accelerate charged particles and power the jets.</p>
+
+<h4>Magnetized Accretion Disk</h4>
+<p>The accretion disk is a structure of gas and plasma that spirals inward toward the black hole. As the material in the disk moves closer to the black hole, it becomes highly magnetized due to the complex interaction between the plasma and magnetic fields. The accretion disk provides the fuel for the system and plays a vital role in shaping the magnetic field that threads the black hole’s event horizon.
+
+The disk's plasma is a key source of charged particles, which interact with the magnetic fields in the vicinity of the black hole. As material accretes onto the black hole, it enhances the magnetic field strength, and this magnetic field, in turn, connects to the black hole’s horizon, facilitating energy extraction via the BZ mechanism. The accretion process also helps establish the collimated structure of the jets that emerge from the system.</p>
+
+<h4>Magnetic Field and Electromagnetic Induction</h4>
+<p>A large-scale magnetic field threading the black hole's event horizon is the third critical component. The origin of this magnetic field is likely tied to the accretion disk, which generates and amplifies magnetic fields through magnetohydrodynamic (MHD) processes.
+
+The frame-dragging effect of the rotating black hole twists these magnetic field lines, inducing an electric field near the event horizon. This electromagnetic induction is essential for the BZ process. The induced electric field accelerates charged particles along the magnetic field lines, creating relativistic jets. These jets are highly collimated and travel along the black hole’s rotation axis.
+
+The energy extraction from the black hole's rotation powers these jets, and the efficiency of this process increases with both the black hole's spin and the strength of the magnetic field threading the horizon. </p>
+
+
+<h3>4. Numerical Simulations and Recent Developments</h3>
+
+<p>In recent years, general relativistic magnetohydrodynamic (GRMHD) simulations have provided new insights into the BZ mechanism. These simulations reveal a spine-sheath structure in BZ-driven jets, where a fast, highly relativistic core (spine) is surrounded by a slower-moving outer layer (sheath). The inner region of the jet is powered directly by the BZ mechanism, while the outer regions may be influenced by the surrounding accretion flow.
+
+The structure and power of the jet depend heavily on the configuration of the magnetic field. A split-monopole magnetic field configuration, where the magnetic field lines emanate symmetrically from the black hole, is particularly efficient for energy extraction. For black holes with high spins, jet power scales steeply with spin, showing a near-quadratic dependence for moderate spins, but rising rapidly for higher values.</p>
+
+<h3> 5. Observational Evidence</h3>
+
+<p>A number of observational signatures provide strong support for the BZ mechanism as a source of AGN jet power. For instance, observations show a strong correlation between jet power and black hole spin in AGN, consistent with the BZ model’s predictions. Furthermore, the detection of very high Lorentz factors in AGN jets aligns with the relativistic velocities expected from BZ-driven outflows.
+
+Additionally, Faraday rotation measurements of AGN jets, which probe the alignment of magnetic fields, suggest the presence of strong, ordered magnetic fields threading the jets—another prediction of the BZ mechanism. Perhaps most compelling is the recent Event Horizon Telescope (EHT) imaging of the M87 galaxy's jet base, which reveals a morphology and structure that strongly support a BZ-type origin for the jet.</p>
+
+<h3>6. Challenges and Open Questions</h3>
+
+Despite its successes, several challenges and unanswered questions remain in fully understanding the BZ mechanism:
+
+<ul>
+<li>Magnetic Field Origin: While the BZ mechanism requires strong, ordered magnetic fields, the exact processes responsible for generating and sustaining these fields in AGN are not fully understood.</li>
+  
+<li>Jet Composition: The composition of AGN jets, whether primarily leptonic (electron-positron pairs) or hadronic (protons and heavier ions), remains an area of active debate. The BZ mechanism can, in principle, work with either, but detailed understanding is needed.</li>
+
+
+<li>Jet Stability: Jets remain collimated over vast distances (up to millions of light-years). The mechanisms that ensure their stability over such distances, and their interaction with surrounding environments, are still not completely clear.</li>
+
+<li>Accretion Dynamics: The interplay between the BZ mechanism and accretion flows remains a complex problem. Accretion flows can influence the magnetic field structure and jet dynamics, complicating the theoretical picture.</li>
+
+
+</ul>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[1. Introduction]]></summary></entry><entry><title type="html">TIL Physics 03: The Baldwin effect in Active Galactic Nuclei</title><link href="http://localhost:4000/tilphysics/2024/09/11/til-03.html" rel="alternate" type="text/html" title="TIL Physics 03: The Baldwin effect in Active Galactic Nuclei" /><published>2024-09-11T01:15:13+05:30</published><updated>2024-09-11T01:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/11/til-03</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/11/til-03.html"><![CDATA[<p>The Baldwin effect, a fundamental phenomenon in quasar and active galactic nuclei (AGN) astrophysics, describes an inverse correlation between the equivalent width of specific broad emission lines, primarily C IV λ1549, and the continuum luminosity of the source. First observed by <a href="https://ui.adsabs.harvard.edu/abs/1977ApJ...214..679B/abstract" target=None>Jack Baldwin</a> in 1977, this effect provides critical insights into the physical processes occurring in the vicinity of supermassive black holes (SMBHs) at galactic centers. The relationship manifests as a decrease in emission line strength relative to the continuum as the overall luminosity of the AGN increases.</p>
 
 <h2>Physical Mechanisms</h2>
 
@@ -435,7 +435,7 @@ The Baldwin effect remains a critical area of research in AGN and quasar physics
 
 <p>Above the accretion disk is a region of even hotter, less dense gas known as the corona. The corona is thought to be responsible for a significant amount of the X-ray emission observed from AGN. The X-rays from the corona can irradiate the accretion disk, causing it to fluoresce and emit its own X-rays. This process is known as Compton reflection or coronal upscattering. In particular, the inverse Compton scattering of photons from the geometrically thin disk by hot electrons in the corona quickly cools the coronal gas. The reflection component in the X-ray spectra of AGN arises from the interaction of the X-ray photons with the accretion disk. This interaction results in the reflection of a fraction of the incident radiation, which forms a characteristic 'echo' in the X-ray light curve. The reflection component is crucial for understanding the geometry and dynamics of the corona and the disk.</p>
 
-<p>The strong gravitational field of the black hole causes the light paths to bend and the X-ray frequencies to shift, leading to effects such as gravitational redshift and time dilation. These relativistic effects can distort the reverberation lags and the reflection spectrum, providing a probe of the black hole's mass and spin. In the context of AGN, 'lags' refer to the time delay between variations in different energy bands of the X-ray emission. At the lowest frequencies, hard lags are observed where the power-law dominated hard band lags the soft band. However, at higher frequencies, soft lags are observed. These lags are interpreted as due to reverberation from the accretion disk, with the reflection component responding to variability from the X-ray corona. The reverberation lags can be measured as a function of frequency using Fourier techniques, revealing the transfer function or impulse response of the system. The lag-frequency and lag-energy spectra can provide information about the geometry and dynamics of the corona and the disc.</p>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[The central engine of an Active Galactic Nucleus (AGN) is a supermassive black hole, which accretes matter from its surroundings. This accretion process forms a disk of matter around the black hole, known as the accretion disk. As the matter spirals inward towards the black hole, it loses gravitational potential energy, which is converted into kinetic and thermal energy. This energy conversion process heats up the innermost regions of the disk to extremely high temperatures, causing them to emit X-rays. The X-ray emission from the accretion disk is primarily due to two processes: thermal emission and non-thermal emission. Thermal emission, also known as blackbody radiation, occurs when the hot gas in the inner accretion disk emits X-rays directly. Non-thermal emission, on the other hand, occurs when high-energy particles in the disk collide with photons, boosting their energy up to the X-ray range. This process is known as inverse Compton scattering.]]></summary></entry><entry><title type="html">TIL Physics 01: Pair production in AGN environments</title><link href="http://localhost:4000/tilphysics/2024/09/08/til-01.html" rel="alternate" type="text/html" title="TIL Physics 01: Pair production in AGN environments" /><published>2024-09-08T23:15:13+05:30</published><updated>2024-09-08T23:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/08/til-01</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/08/til-01.html"><![CDATA[<h1>Mechanism of Pair Production in Active Galactic Nuclei (AGNs)</h1>
+<p>The strong gravitational field of the black hole causes the light paths to bend and the X-ray frequencies to shift, leading to effects such as gravitational redshift and time dilation. These relativistic effects can distort the reverberation lags and the reflection spectrum, providing a probe of the black hole's mass and spin. In the context of AGN, 'lags' refer to the time delay between variations in different energy bands of the X-ray emission. At the lowest frequencies, hard lags are observed where the power-law dominated hard band lags the soft band. However, at higher frequencies, soft lags are observed. These lags are interpreted as due to reverberation from the accretion disk, with the reflection component responding to variability from the X-ray corona. The reverberation lags can be measured as a function of frequency using Fourier techniques, revealing the transfer function or impulse response of the system. The lag-frequency and lag-energy spectra can provide information about the geometry and dynamics of the corona and the disc.</p>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[The central engine of an Active Galactic Nucleus (AGN) is a supermassive black hole, which accretes matter from its surroundings. This accretion process forms a disk of matter around the black hole, known as the accretion disk. As the matter spirals inward towards the black hole, it loses gravitational potential energy, which is converted into kinetic and thermal energy. This energy conversion process heats up the innermost regions of the disk to extremely high temperatures, causing them to emit X-rays. The X-ray emission from the accretion disk is primarily due to two processes: thermal emission and non-thermal emission. Thermal emission, also known as blackbody radiation, occurs when the hot gas in the inner accretion disk emits X-rays directly. Non-thermal emission, on the other hand, occurs when high-energy particles in the disk collide with photons, boosting their energy up to the X-ray range. This process is known as inverse Compton scattering.]]></summary></entry><entry><title type="html">TIL Physics 01: Pair production in AGN environments</title><link href="http://localhost:4000/tilphysics/2024/09/09/til-01.html" rel="alternate" type="text/html" title="TIL Physics 01: Pair production in AGN environments" /><published>2024-09-09T23:15:13+05:30</published><updated>2024-09-09T23:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/09/til-01</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/09/til-01.html"><![CDATA[<h1>Mechanism of Pair Production in Active Galactic Nuclei (AGNs)</h1>
 <p>Pair production in Active Galactic Nuclei (AGNs) represents a fundamental process in the high-energy astrophysical environment surrounding supermassive black holes. This phenomenon involves the interaction of high-energy photons with nuclei, particularly protons, and occurs in regions of extreme electromagnetic fields and relativistic particle populations. Understanding pair production is crucial for explaining the observed X-ray and gamma-ray emissions from AGNs, as well as their variability.</p>
 <h2>Inner Accretion Disk and Corona Structure</h2>
 <p>The inner accretion disk of an AGN consists of a highly ionized plasma where gravitational energy from matter spiraling into the supermassive black hole is converted into heat and radiation. Above the accretion disk lies the hot corona, which plays a key role in high-energy photon production. The corona, composed of relativistic electrons and possibly protons, radiates primarily in the X-ray regime via inverse Compton scattering, where thermal photons from the accretion disk gain energy through interactions with relativistic particles in the corona.</p>
