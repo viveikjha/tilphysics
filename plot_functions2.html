@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Physics Special Functions</title>
+    <!-- Polyfill for older browsers -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <!-- MathJax for rendering LaTeX -->
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <!-- Plotly.js for plotting -->
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /* font-family: sans-serif; */
+            font-family: 'Inter', sans-serif; /* Modern font */
+            /* background: #f9f9f9; */
+            /* Grainy texture using CSS */
+            background-color: #f4f2ef; /* Base color */
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+            padding: 2rem;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header-container {
+            text-align: center; /* Center title and subtitle */
+            margin-bottom: 2.5rem;
+        }
+        .header-container h1 {
+            font-family: 'Source Serif 4', serif; /* Serif font for title */
+            font-weight: 700;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        .header-container p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 600px; /* Limit width for readability */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Modern Dropdown Styling */
+        #function-selector {
+            display: block; /* Make it block level for centering */
+            margin: 0 auto 2rem auto; /* Center the dropdown */
+            padding: 0.8rem 1.2rem;
+            font-size: 1rem;
+            min-width: 350px; /* Slightly wider */
+            max-width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 8px; /* Rounded corners */
+            background-color: white;
+            appearance: none; /* Remove default system appearance */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            /* Custom arrow */
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 0.65em auto;
+            cursor: pointer;
+            transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        #function-selector:focus {
+            outline: none;
+            border-color: #007bff; /* Highlight on focus */
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+        }
+        /* Style for IE/Edge */
+        #function-selector::-ms-expand {
+            display: none;
+        }
+
+        .func-card {
+            background: white;
+            padding: 1.5rem 2rem; /* Slightly more padding */
+            margin-bottom: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Softer shadow */
+            display: none; /* Hide cards by default */
+            gap: 2rem; /* Increased space between content and plot */
+            align-items: flex-start; /* Align items at the top */
+            border: 1px solid #e0e0e0; /* Subtle border */
+        }
+        .func-card.active {
+            display: flex; /* Show the active card */
+        }
+        .content-area {
+            flex: 1; /* Allow content to take available space */
+            min-width: 0; /* Prevent flex item overflow */
+        }
+        .plot-area {
+            flex: 0 0 450px; /* Fixed width for the plot area */
+            height: 350px; /* Fixed height for the plot area */
+            border: 1px solid #eee;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fdfdfd;
+            font-size: 0.9rem;
+            color: #777;
+            text-align: center;
+            overflow: hidden; /* Ensure plot fits */
+        }
+        .plot-container {
+             width: 100%;
+             height: 100%;
+        }
+        .func-card h2 {
+            font-family: 'Source Serif 4', serif; /* Serif font for card titles */
+            margin-top: 0;
+            margin-bottom: 0.75rem; /* More space below title */
+            color: #2c3e50; /* Dark blue-grey */
+            font-size: 1.6rem;
+        }
+        .description {
+                margin-top: 0.5rem;
+                margin-bottom: 1rem;
+                color: #444;
+        }
+        .math {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 1rem 0 1.5rem; /* More vertical space */
+            overflow-wrap: break-word; /* Prevent long equations from overflowing */
+            background-color: #f8f8f8; /* Slight background for math */
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            border-left: 3px solid #007bff; /* Accent border */
+        }
+        .physics-use {
+            font-style: normal; /* Remove default italic */
+            color: #555;
+            margin-top: 1.5rem; /* More space above */
+            font-size: 0.95rem;
+        }
+        .physics-use strong {
+            font-weight: 700; /* Make 'Physics Use:' bolder */
+            color: #333;
+        }
+        /* Style for Plotly plots */
+        .js-plotly-plot .plotly .modebar {
+            display: none !important; /* Hide Plotly modebar for cleaner look */
+        }
+        #placeholder-message {
+            padding: 1.5rem; /* More padding */
+            text-align: center;
+            color: #666;
+            background-color: rgba(238, 238, 238, 0.7); /* Slightly transparent */
+            border-radius: 8px;
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>Special Mathematical Functions in Physics</h1>
+        <p>Select a special function from the dropdown menu to view its details, mathematical definition, physical applications, and plot.</p>
+    </div>
+
+    <select id="function-selector">
+        <option value="">-- Select a Function --</option>
+        <option value="card-legendre">1. Legendre Polynomials</option>
+        <option value="card-assoc-legendre">2. Associated Legendre Polynomials</option>
+        <option value="card-hermite">3. Hermite Polynomials</option>
+        <option value="card-laguerre">4. Laguerre Polynomials</option>
+        <option value="card-chebyshev">5. Chebyshev Polynomials (First Kind)</option>
+        <option value="card-bessel-j">6. Bessel Function (First Kind)</option>
+        <option value="card-bessel-y">7. Bessel Function (Second Kind)</option>
+        <option value="card-bessel-i">8. Modified Bessel Function (First Kind)</option>
+        <option value="card-bessel-k">9. Modified Bessel Function (Second Kind)</option>
+        <option value="card-spherical-harmonics">10. Spherical Harmonics</option>
+        <option value="card-spherical-bessel-j">11. Spherical Bessel Function (First Kind)</option>
+        <option value="card-spherical-bessel-y">12. Spherical Bessel Function (Second Kind)</option>
+        <option value="card-gamma">13. Gamma Function</option>
+        <option value="card-beta">14. Beta Function</option>
+        <option value="card-digamma">15. Digamma Function</option>
+        <option value="card-hypergeometric">16. Hypergeometric Function</option>
+        <option value="card-elliptic">18. Elliptic Integrals</option> <!-- Note: Skipped 17 -->
+        <option value="card-jacobi">19. Jacobi Elliptic Functions</option>
+        <option value="card-airy">20. Airy Functions</option>
+        <option value="card-erf">21. Error Function</option>
+        <option value="card-heaviside">22. Heaviside Step Function</option>
+        <option value="card-dirac">23. Dirac Delta Function</option>
+    </select>
+
+    <div id="function-display-area">
+        <div id="placeholder-message">Please select a function from the dropdown above.</div>
+
+        <!-- Function Cards (initially hidden) -->
+        <!-- Add id="card-..." to each func-card div -->
+
+        <!-- 1. Legendre Polynomials -->
+        <div class="func-card" id="card-legendre">
+            <div class="content-area">
+                <h2>Legendre Polynomials</h2>
+                <p class="description">
+                    Legendre Polynomials are a system of complete and orthogonal polynomials, solutions to Legendre's differential equation. They are widely used in physics and engineering, particularly in problems involving spherical symmetry.
+                </p>
+                <div class="math">
+                    \( P_n(x) = \frac{1}{2^n n!} \frac{d^n}{dx^n}\Big[(x^2-1)^n\Big] \) (Rodrigues' formula)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Crucial for solving Laplace’s equation and Poisson's equation in spherical coordinates, leading to their use in multipole expansions for electrostatic and gravitational potentials. They also appear in quantum mechanics, particularly in scattering theory and angular momentum problems.
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-legendre"></div>
+            </div>
+        </div>
+
+        <!-- 2. Associated Legendre Polynomials -->
+        <div class="func-card" id="card-assoc-legendre">
+            <div class="content-area">
+                <h2>Associated Legendre Polynomials</h2>
+                <p class="description">
+                    These functions generalize the Legendre polynomials and are solutions to the associated Legendre differential equation. They depend on two integer parameters, \(n\) (degree) and \(m\) (order).
+                </p>
+                <div class="math">
+                    \( P_n^m(x) = (-1)^m (1-x^2)^{\frac{m}{2}} \frac{d^m}{dx^m} P_n(x) \)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Essential components in the definition of spherical harmonics, which describe the angular dependence of wavefunctions in quantum mechanics (e.g., atomic orbitals), solutions to potential theory problems, and analysis of fields in geophysics and electromagnetism.
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-assoc-legendre">Plot not generated for this function (requires specific n, m).</div>
+            </div>
+        </div>
+
+        <!-- 3. Hermite Polynomials -->
+        <div class="func-card" id="card-hermite">
+            <div class="content-area">
+                <h2>Hermite Polynomials</h2>
+                <p class="description">
+                    Hermite Polynomials are a classical orthogonal polynomial sequence that arise as solutions to Hermite's differential equation. They form a complete basis for functions square-integrable with respect to a Gaussian weight function.
+                </p>
+                <div class="math">
+                    \( H_n(x) = (-1)^n e^{x^2} \frac{d^n}{dx^n}\Big(e^{-x^2}\Big) \) (Rodrigues-like formula)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> They form the spatial part of the wavefunctions for the quantum harmonic oscillator, a fundamental model system. They also appear in probability theory (related to the normal distribution) and path-integral formulations of quantum field theory.
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-hermite"></div>
+            </div>
+        </div>
+
+        <!-- 4. Laguerre Polynomials -->
+        <div class="func-card" id="card-laguerre">
+            <div class="content-area">
+                <h2>Laguerre Polynomials</h2>
+                <p class="description">
+                    Laguerre Polynomials are solutions to Laguerre's differential equation. The associated Laguerre polynomials (often denoted \(L_n^k(x)\)) are particularly important in quantum mechanics.
+                </p>
+                <div class="math">
+                    \( L_n(x) = \frac{e^x}{n!} \frac{d^n}{dx^n}\Big(e^{-x} x^n\Big) \) (Rodrigues' formula for Laguerre polynomials)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> The associated Laguerre polynomials appear in the radial part of the solution to the Schrödinger equation for the hydrogen atom. They are also used in quantum optics to describe photon statistics.
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-laguerre"></div>
+            </div>
+        </div>
+
+        <!-- 5. Chebyshev Polynomials (First Kind) -->
+        <div class="func-card" id="card-chebyshev">
+            <div class="content-area">
+                <h2>Chebyshev Polynomials (First Kind)</h2>
+                <p class="description">
+                    Chebyshev Polynomials of the First Kind, denoted \(T_n(x)\), are a sequence of orthogonal polynomials related to trigonometric functions. They are defined on the interval [-1, 1].
+                </p>
+                <div class="math">
+                    \( T_n(x) = \cos\big(n \arccos(x)\big) \)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Widely applied in approximation theory for function interpolation and polynomial approximation (minimax property). Used in the design of digital and analog filters, antenna theory, and numerical methods for solving differential equations.
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-chebyshev"></div>
+            </div>
+        </div>
+
+        <!-- 6. Bessel Function (First Kind) -->
+        <div class="func-card" id="card-bessel-j">
+            <div class="content-area">
+                <h2>Bessel Function (First Kind)</h2>
+                <p class="description">
+                    Bessel functions of the first kind, \(J_n(x)\), are solutions to Bessel's differential equation that are finite at the origin \(x=0\). They arise naturally in problems involving cylindrical or spherical symmetry.
+                </p>
+                <div class="math">
+                    \( J_n(x) = \sum_{m=0}^{\infty} \frac{(-1)^m}{m!\, \Gamma(m+n+1)} \Big(\frac{x}{2}\Big)^{2m+n} \)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Occur in problems involving wave propagation and static potentials in cylindrical coordinates, such as the vibrations of a circular drumhead, heat conduction in a cylinder, modes in optical fibers, and electromagnetic wave propagation in cylindrical waveguides.
+                </div>
+            </div>
+            <div class="plot-area">
+                 <div class="plot-container" id="plot-bessel-j">Plot not generated for this function (requires special function library).</div>
+            </div>
+        </div>
+
+        <!-- 7. Bessel Function (Second Kind) -->
+        <div class="func-card" id="card-bessel-y">
+            <div class="content-area">
+                <h2>Bessel Function (Second Kind)</h2>
+                <p class="description">
+                    Bessel functions of the second kind, \(Y_n(x)\) (also known as Neumann functions), are a second set of linearly independent solutions to Bessel's differential equation. They are singular (diverge) at the origin \(x=0\).
+                </p>
+                <div class="math">
+                    \( Y_n(x) \) (Defined as a second, linearly independent solution to Bessel's equation, often via \( J_n(x) \))
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Appear alongside \(J_n(x)\) in general solutions to cylindrical wave equations, particularly when the domain does not include the origin or when boundary conditions require a singular component (e.g., waves outside a cylinder).
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-bessel-y">Plot not generated for this function (requires special function library).</div>
+            </div>
+        </div>
+
+        <!-- 8. Modified Bessel Function (First Kind) -->
+        <div class="func-card" id="card-bessel-i">
+            <div class="content-area">
+                <h2>Modified Bessel Function (First Kind)</h2>
+                <p class="description">
+                    Modified Bessel functions of the first kind, \(I_n(x)\), are solutions to the modified Bessel differential equation. Unlike \(J_n(x)\), they do not oscillate but grow exponentially for large \(x\). They are related to \(J_n(ix)\).
+                </p>
+                <div class="math">
+                    \( I_n(x) = i^{-n} J_n(ix) \) (Relationship to Bessel function \(J_n\))
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Used in problems involving diffusion processes, heat conduction in cylindrical coordinates (especially steady-state), fluid dynamics (Laplace equation in toroidal coordinates), and calculations in statistical mechanics.
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-bessel-i">Plot not generated for this function (requires special function library).</div>
+            </div>
+        </div>
+
+        <!-- 9. Modified Bessel Function (Second Kind) -->
+        <div class="func-card" id="card-bessel-k">
+            <div class="content-area">
+                <h2>Modified Bessel Function (Second Kind)</h2>
+                <p class="description">
+                    Modified Bessel functions of the second kind, \(K_n(x)\) (also known as Macdonald functions), are the second linearly independent solution to the modified Bessel equation. They decay exponentially for large \(x\).
+                </p>
+                <div class="math">
+                    \( K_n(x) \) (Decaying solution of the modified Bessel equation, related to \(I_n(x)\) and \(I_{-n}(x)\))
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Appear in problems with cylindrical symmetry where solutions must decay far from the source or axis, such as calculating Green's functions for the Helmholtz or Laplace equation, quantum tunneling problems, and certain plasma physics calculations.
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-bessel-k">Plot not generated for this function (requires special function library).</div>
+            </div>
+        </div>
+
+        <!-- 10. Spherical Harmonics -->
+        <div class="func-card" id="card-spherical-harmonics">
+            <div class="content-area">
+                <h2>Spherical Harmonics</h2>
+                <p class="description">
+                    Spherical Harmonics, \(Y_l^m(\theta, \phi)\), form a complete set of orthogonal functions on the surface of a sphere. They are the angular portion of the solution to Laplace's equation in spherical coordinates.
+                </p>
+                <div class="math">
+                    \( Y_l^m(\theta, \phi) = \sqrt{\frac{2l+1}{4\pi} \frac{(l-m)!}{(l+m)!}}\, P_l^m(\cos \theta) e^{im\phi} \)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Fundamental in representing functions defined on a sphere. They describe the angular dependence of atomic orbitals in quantum mechanics (eigenfunctions of angular momentum), gravitational fields, cosmic microwave background radiation anisotropies, and multipole expansions in electromagnetism.
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-spherical-harmonics">Plot not generated for this function (requires 3D/spherical plot).</div>
+            </div>
+        </div>
+
+        <!-- 11. Spherical Bessel Function (First Kind) -->
+        <div class="func-card" id="card-spherical-bessel-j">
+            <div class="content-area">
+                <h2>Spherical Bessel Function (First Kind)</h2>
+                <p class="description">
+                    Spherical Bessel functions of the first kind, \(j_l(x)\), are related to the ordinary Bessel functions \(J_n(x)\) with half-integer order. They are solutions to the radial part of the Helmholtz equation in spherical coordinates and are regular at the origin.
+                </p>
+                <div class="math">
+                    \( j_l(x) = \sqrt{\frac{\pi}{2x}}\, J_{l+\frac{1}{2}}(x) \)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Used extensively in the radial part of the solution to the free-particle Schrödinger equation and wave equations (like Helmholtz) in spherical coordinates. Essential in scattering theory (partial wave analysis) and describing wave phenomena within spherical boundaries.
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-spherical-bessel-j">Plot not generated for this function (requires special function library).</div>
+            </div>
+        </div>
+
+        <!-- 12. Spherical Bessel Function (Second Kind) -->
+        <div class="func-card" id="card-spherical-bessel-y">
+            <div class="content-area">
+                <h2>Spherical Bessel Function (Second Kind)</h2>
+                <p class="description">
+                    Spherical Bessel functions of the second kind, \(y_l(x)\) (or Neumann functions \(n_l(x)\)), are related to the ordinary Bessel functions \(Y_n(x)\) with half-integer order. They are also solutions to the radial Helmholtz equation but are singular at the origin.
+                </p>
+                <div class="math">
+                    \( y_l(x) = \sqrt{\frac{\pi}{2x}}\, Y_{l+\frac{1}{2}}(x) \)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Appear alongside \(j_l(x)\) in general solutions to the radial wave equation in spherical coordinates, particularly in scattering theory for regions excluding the origin or when boundary conditions necessitate a singular component.
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-spherical-bessel-y">Plot not generated for this function (requires special function library).</div>
+            </div>
+        </div>
+
+        <!-- 13. Gamma Function -->
+        <div class="func-card" id="card-gamma">
+            <div class="content-area">
+                <h2>Gamma Function</h2>
+                <p class="description">
+                    The Gamma function, \(\Gamma(x)\), is a generalization of the factorial function to complex and real numbers. It is defined via a convergent improper integral for \( \mathrm{Re}(x) > 0 \).
+                </p>
+                <div class="math">
+                    \( \Gamma(x) = \int_0^\infty t^{x-1} e^{-t}\, dt \)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Appears ubiquitously in physics and mathematics. Used in normalization constants for various probability distributions in statistical mechanics, evaluating integrals in quantum field theory (dimensional regularization), defining Bessel functions, and relating to the Beta function. For integer \(n\), \(\Gamma(n) = (n-1)!\).
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-gamma">Plot not generated for this function (requires special function library).</div>
+            </div>
+        </div>
+
+        <!-- 14. Beta Function -->
+        <div class="func-card" id="card-beta">
+            <div class="content-area">
+                <h2>Beta Function</h2>
+                <p class="description">
+                    The Beta function, \(B(x, y)\), is a special function closely related to the Gamma function. It is defined by an integral over the interval [0, 1].
+                </p>
+                <div class="math">
+                    \( B(x, y) = \int_0^1 t^{x-1}(1-t)^{y-1}\, dt = \frac{\Gamma(x)\Gamma(y)}{\Gamma(x+y)} \)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Appears in probability theory (Beta distribution), statistical mechanics, string theory (Virasoro-Shapiro amplitude), and in the evaluation of certain Feynman integrals in quantum field theory.
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-beta">Plot not generated for this function (requires 2 parameters).</div>
+            </div>
+        </div>
+
+        <!-- 15. Digamma Function -->
+        <div class="func-card" id="card-digamma">
+            <div class="content-area">
+                <h2>Digamma Function</h2>
+                <p class="description">
+                    The Digamma function, \(\psi(x)\), is defined as the logarithmic derivative of the Gamma function. It is the first of the polygamma functions.
+                </p>
+                <div class="math">
+                    \( \psi(x) = \frac{d}{dx} \ln \Gamma(x) = \frac{\Gamma'(x)}{\Gamma(x)} \)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Used in evaluating sums and integrals, particularly in quantum field theory calculations involving renormalization and loop integrals. Also appears in statistical mechanics and number theory.
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-digamma">Plot not generated for this function (requires special function library).</div>
+            </div>
+        </div>
+
+        <!-- 16. Hypergeometric Function -->
+        <div class="func-card" id="card-hypergeometric">
+            <div class="content-area">
+                <h2>Hypergeometric Function</h2>
+                <p class="description">
+                    The (Gaussian or ordinary) Hypergeometric function, \({}_2F_1(a,b;c;z)\), is a special function represented by the hypergeometric series. Many other special functions are specific cases or related to it. It is a solution to the hypergeometric differential equation.
+                </p>
+                <div class="math">
+                    \( {}_2F_1(a,b;c;z) = \sum_{k=0}^\infty \frac{(a)_k\,(b)_k}{(c)_k} \frac{z^k}{k!} \) (where \( (x)_k \) is the Pochhammer symbol)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Provides solutions to a wide range of second-order linear differential equations that appear in physics, including problems in quantum mechanics (e.g., potentials solvable via transformation to the hypergeometric equation), general relativity (e.g., perturbations of black holes), and fluid dynamics.
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-hypergeometric">Plot not generated for this function (requires specific a, b, c).</div>
+            </div>
+        </div>
+
+        <!-- 18. Elliptic Integrals -->
+        <div class="func-card" id="card-elliptic">
+            <div class="content-area">
+                <h2>Elliptic Integrals</h2>
+                <p class="description">
+                    Elliptic integrals originally arose in connection with the problem of finding the arc length of an ellipse. The incomplete and complete elliptic integrals of the first (\(F\), \(K\)) and second (\(E\)) kind are standard forms.
+                </p>
+                <div class="math">
+                    \( K(k) = \int_0^{\pi/2} \frac{d\theta}{\sqrt{1-k^2\sin^2 \theta}}, \quad E(k) = \int_0^{\pi/2} \sqrt{1-k^2\sin^2 \theta}\, d\theta \) (Complete elliptic integrals of the 1st and 2nd kind)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Arise in calculating the period of a simple pendulum for large amplitudes, finding the magnetic field of current loops, determining geodesics on surfaces of revolution (like ellipsoids) in general relativity, and analyzing certain nonlinear dynamical systems.
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-elliptic">Plot not generated for this function (requires special function library).</div>
+            </div>
+        </div>
+
+        <!-- 19. Jacobi Elliptic Functions -->
+        <div class="func-card" id="card-jacobi">
+            <div class="content-area">
+                <h2>Jacobi Elliptic Functions</h2>
+                <p class="description">
+                    Jacobi elliptic functions (\(\mathrm{sn}, \mathrm{cn}, \mathrm{dn}\)) are standard forms of elliptic functions that generalize trigonometric functions. They are doubly periodic functions in the complex plane and are related to elliptic integrals.
+                </p>
+                <div class="math">
+                    \( \mathrm{sn}(u,k),\;\mathrm{cn}(u,k),\;\mathrm{dn}(u,k) \) (Defined via inversion of elliptic integrals)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Provide exact solutions to certain nonlinear differential equations, such as the equations of motion for the nonlinear pendulum and the spinning top (rigid body dynamics). They also appear in the description of certain wave phenomena, including cnoidal waves and soliton theory (e.g., Korteweg–de Vries equation).
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-jacobi">Plot not generated for this function (requires special function library).</div>
+            </div>
+        </div>
+
+        <!-- 20. Airy Functions -->
+        <div class="func-card" id="card-airy">
+            <div class="content-area">
+                <h2>Airy Functions</h2>
+                <p class="description">
+                    Airy functions, \(\mathrm{Ai}(x)\) and \(\mathrm{Bi}(x)\), are solutions to the Airy differential equation \(y'' - xy = 0\). \(\mathrm{Ai}(x)\) decays exponentially for \(x > 0\) and oscillates for \(x < 0\), while \(\mathrm{Bi}(x)\) grows exponentially for \(x > 0\).
+                </p>
+                <div class="math">
+                    \( \mathrm{Ai}(x) = \frac{1}{\pi} \int_0^\infty \cos\Big(\frac{t^3}{3}+xt\Big) dt \) <br>
+                    \( \mathrm{Bi}(x) = \frac{1}{\pi} \int_0^\infty \Big[\exp\Big(-\frac{t^3}{3}+xt\Big) + \sin\Big(\frac{t^3}{3}+xt\Big)\Big] dt \)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Essential for describing wave phenomena near a turning point (where potential energy equals total energy) in quantum mechanics (e.g., particle in a linear potential well, quantum tunneling) and optics (caustics, rainbows). They are the simplest functions displaying such transition behavior and are fundamental to the WKB approximation.
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-airy">Plot not generated for this function (requires special function library).</div>
+            </div>
+        </div>
+
+        <!-- 21. Error Function -->
+        <div class="func-card" id="card-erf">
+            <div class="content-area">
+                <h2>Error Function</h2>
+                <p class="description">
+                    The error function, \(\mathrm{erf}(x)\), is related to the cumulative distribution function of the normal (Gaussian) distribution. It represents the probability for a normally distributed random variable to fall within the interval \([-x\sigma\sqrt{2}, x\sigma\sqrt{2}]\). The complementary error function is \(\mathrm{erfc}(x) = 1 - \mathrm{erf}(x)\).
+                </p>
+                <div class="math">
+                    \( \mathrm{erf}(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} dt \)
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Appears frequently in solutions to the heat equation and diffusion equation (e.g., describing temperature distribution or particle concentration over time). Also used in probability, statistics, and solid-state physics (e.g., modeling dopant diffusion).
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-erf"></div>
+            </div>
+        </div>
+
+        <!-- 22. Heaviside Step Function -->
+        <div class="func-card" id="card-heaviside">
+            <div class="content-area">
+                <h2>Heaviside Step Function</h2>
+                <p class="description">
+                    The Heaviside step function, \(H(x)\) or \(\theta(x)\), is a discontinuous function whose value is zero for negative arguments and one for non-negative arguments. It acts like a mathematical "switch".
+                </p>
+                <div class="math">
+                    \( H(x) = \theta(x) = \begin{cases} 0, & x < 0 \\ 1, & x \ge 0 \end{cases} \) (Definition may vary at \(x=0\), e.g., \(H(0)=1/2\))
+                </div>
+                <div class="physics-use">
+                    <strong>Physics Use:</strong> Models physical systems that are switched on or off at a specific time or position. Used extensively in signal processing, control theory (representing step inputs), and in constructing Green’s functions to represent causal responses (response occurs only after the stimulus).
+                </div>
+            </div>
+            <div class="plot-area">
+                <div class="plot-container" id="plot-heaviside"></div>
+            </div>
+        </div>
+    <!-- 23. Dirac Delta Function -->
+    <div class="func-card" id="card-dirac">
+        <div class="content-area">
+        <h2>Dirac Delta Function</h2>
+        <p class="description">
+            The Dirac delta function, \(\delta(x)\), is not a true function but a distribution or generalized function. It is zero everywhere except at \(x=0\), where it is infinitely high, and its integral over the entire real line is equal to one. It represents an idealized point source or impulse.
+        </p>
+        <div class="math">
+            \( \delta(x) = \begin{cases} +\infty, & x = 0 \\ 0, & x \ne 0 \end{cases} \) and \( \int_{-\infty}^{\infty} \delta(x) dx = 1 \)
+        </div>
+        <div class="physics-use">
+            <strong>Physics Use:</strong> Represents point charges, point masses, or point sources in classical field theories (electromagnetism, gravity). Used to model instantaneous impulses in mechanics or signals. Fundamental in quantum mechanics (eigenfunctions of position operator) and quantum field theory (propagators, Green's functions). Defines the impulse response of linear time-invariant systems.
+        </div>
+        </div>
+        <div class="plot-area">
+        <div class="plot-container" id="plot-dirac"></div>
+        </div>
+    </div>
+    </div> <!-- End function-display-area -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const plotLayout = {
+            margin: { l: 45, r: 20, t: 30, b: 45 }, // Adjusted margins
+            xaxis: {
+                zeroline: true,
+                zerolinewidth: 1,
+                zerolinecolor: '#bdbdbd',
+                gridcolor: '#eee', // Lighter grid lines
+                titlefont: { size: 14, color: '#555' },
+                tickfont: { size: 12, color: '#555' }
+            },
+            yaxis: {
+                zeroline: true,
+                zerolinewidth: 1,
+                zerolinecolor: '#bdbdbd',
+                gridcolor: '#eee', // Lighter grid lines
+                titlefont: { size: 14, color: '#555' },
+                tickfont: { size: 12, color: '#555' }
+            },
+            showlegend: true,
+            legend: {
+                x: 0.05,
+                y: 0.95,
+                bgcolor: 'rgba(255,255,255,0.7)', // Slightly more opaque legend
+                bordercolor: '#ddd',
+                borderwidth: 1,
+                font: { size: 11 }
+            },
+            paper_bgcolor: 'rgba(0,0,0,0)', // Transparent background for plot area
+            plot_bgcolor: 'rgba(0,0,0,0)'   // Transparent background for plot itself
+        };
+
+        // Helper to generate x values
+        function linspace(start, end, num) {
+            const step = (end - start) / (num - 1);
+            return Array.from({length: num}, (_, i) => start + step * i);
+        }
+
+        // --- Plotting Functions ---
+
+        // 1. Legendre Polynomials
+        function Pn(n, x) {
+            if (n === 0) return 1;
+            if (n === 1) return x;
+            if (n === 2) return 0.5 * (3 * x**2 - 1);
+            if (n === 3) return 0.5 * (5 * x**3 - 3 * x);
+            if (n === 4) return 0.125 * (35 * x**4 - 30 * x**2 + 3);
+            return NaN;
+        }
+        const x_legendre = linspace(-1, 1, 150);
+        const legendre_traces = [0, 1, 2, 3].map(n => ({
+            x: x_legendre,
+            y: x_legendre.map(x => Pn(n, x)),
+            mode: 'lines',
+            name: `P_${n}(x)`,
+            line: { width: 2 } // Slightly thicker lines
+        }));
+        Plotly.newPlot('plot-legendre', legendre_traces, plotLayout);
+
+        // 3. Hermite Polynomials
+        function Hn(n, x) {
+            if (n === 0) return 1;
+            if (n === 1) return 2 * x;
+            if (n === 2) return 4 * x**2 - 2;
+            if (n === 3) return 8 * x**3 - 12 * x;
+            if (n === 4) return 16 * x**4 - 48 * x**2 + 12;
+            return NaN;
+        }
+        const x_hermite = linspace(-2.5, 2.5, 150);
+        const hermite_traces = [0, 1, 2, 3].map(n => ({
+            x: x_hermite,
+            y: x_hermite.map(x => Hn(n, x)),
+            mode: 'lines',
+            name: `H_${n}(x)`,
+            line: { width: 2 }
+        }));
+        Plotly.newPlot('plot-hermite', hermite_traces, plotLayout);
+
+        // 4. Laguerre Polynomials
+        function Ln(n, x) {
+            if (n === 0) return 1;
+            if (n === 1) return -x + 1;
+            if (n === 2) return 0.5 * (x**2 - 4*x + 2);
+            if (n === 3) return (1/6) * (-(x**3) + 9*x**2 - 18*x + 6);
+            return NaN;
+        }
+        const x_laguerre = linspace(0, 8, 150);
+        const laguerre_traces = [0, 1, 2, 3].map(n => ({
+            x: x_laguerre,
+            y: x_laguerre.map(x => Ln(n, x)),
+            mode: 'lines',
+            name: `L_${n}(x)`,
+            line: { width: 2 }
+        }));
+        Plotly.newPlot('plot-laguerre', laguerre_traces, plotLayout);
+
+        // 5. Chebyshev Polynomials (First Kind)
+        function Tn(n, x) {
+            const clampedX = Math.max(-1, Math.min(1, x));
+            return Math.cos(n * Math.acos(clampedX));
+        }
+        const x_chebyshev = linspace(-1, 1, 150);
+        const chebyshev_traces = [0, 1, 2, 3, 4].map(n => ({
+            x: x_chebyshev,
+            y: x_chebyshev.map(x => Tn(n, x)),
+            mode: 'lines',
+            name: `T_${n}(x)`,
+            line: { width: 2 }
+        }));
+        Plotly.newPlot('plot-chebyshev', chebyshev_traces, plotLayout);
+
+        // 21. Error Function (Approximation)
+        function erf_approx(x) {
+            const a1 =  0.254829592; const a2 = -0.284496736;
+            const a3 =  1.421413741; const a4 = -1.453152027;
+            const a5 =  1.061405429; const p  =  0.3275911;
+            const sign = (x < 0) ? -1 : 1;
+            x = Math.abs(x);
+            const t = 1.0 / (1.0 + p * x);
+            const y = 1.0 - (((((a5 * t + a4) * t) + a3) * t + a2) * t + a1) * t * Math.exp(-x * x);
+            return sign * y;
+        }
+        const x_erf = linspace(-3, 3, 150);
+        const erf_trace = [{
+            x: x_erf,
+            y: x_erf.map(x => erf_approx(x)),
+            mode: 'lines',
+            name: 'erf(x)',
+            line: { width: 2, color: '#1f77b4' } // Specific color
+        }];
+        Plotly.newPlot('plot-erf', erf_trace, plotLayout);
+
+        // 22. Heaviside Step Function
+        function H(x) {
+            return x < 0 ? 0 : 1;
+        }
+        const x_heaviside = [-2, -0.001, 0, 0.001, 2];
+        const heaviside_trace = [{
+            x: x_heaviside,
+            y: x_heaviside.map(x => H(x)),
+            mode: 'lines',
+            name: 'H(x)',
+            line: { shape: 'hv', width: 2, color: '#ff7f0e' } // Specific color
+        }];
+         Plotly.newPlot('plot-heaviside', heaviside_trace, {...plotLayout, yaxis: {range: [-0.1, 1.1], zeroline: true, zerolinewidth: 1, zerolinecolor: '#bdbdbd', gridcolor: '#eee'}});
+
+        // --- Dropdown Logic ---
+        const selector = document.getElementById('function-selector');
+        const displayArea = document.getElementById('function-display-area');
+        const placeholder = document.getElementById('placeholder-message');
+        const functionCards = displayArea.querySelectorAll('.func-card');
+
+        selector.addEventListener('change', function() {
+            const selectedValue = this.value;
+
+            // Hide placeholder
+            placeholder.style.display = 'none';
+
+            // Hide all function cards
+            functionCards.forEach(card => {
+                card.classList.remove('active');
+            });
+
+            if (selectedValue) {
+                // Show the selected function card
+                const selectedCard = document.getElementById(selectedValue);
+                if (selectedCard) {
+                    selectedCard.classList.add('active');
+                    // Optional: Resize Plotly plot if needed after display change
+                    const plotContainer = selectedCard.querySelector('.plot-container[id^="plot-"]');
+                    if (plotContainer && plotContainer._fullLayout) { // Check if Plotly plot exists
+                         Plotly.Plots.resize(plotContainer);
+                    }
+                    // Re-render MathJax if necessary
+                    if (typeof MathJax !== 'undefined' && MathJax.typesetPromise) {
+                        MathJax.typesetPromise([selectedCard.querySelector('.math')]).catch(function (err) { console.error('MathJax Typeset Error:', err); });
+                    }
+                }
+            } else {
+                // Show placeholder if default option is selected
+                placeholder.style.display = 'block';
+            }
+        });
+
+        // Initial MathJax typesetting for any potentially pre-selected card (if applicable)
+        // or just generally ensure it runs once after plots are potentially drawn.
+        if (typeof MathJax !== 'undefined' && MathJax.typesetPromise) {
+             MathJax.typesetPromise().catch(function (err) { console.error('Initial MathJax Typeset Error:', err); });
+        }
+
+    });
+</script>
+
+</body>
+</html>
