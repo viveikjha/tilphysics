@@ -1,0 +1,138 @@
+---
+layout: post
+title: "TIL Physics 18: Why Synchrotron Radiation Dominates Radio AGNs"
+subtitle: "An insight into the mechanisms behind synchrotron radiation in radio AGNs"
+date: 2025-05-04 12:45:13 -0400
+background: '/img/posts/06.jpg'
+---
+
+
+<p>Synchrotron radiation is a key process in the radio emission from active galactic nuclei (AGNs). It is produced when fast-moving electrons spiral around magnetic field lines, emitting energy as they accelerate. This process is especially important in the radio bands but becomes less significant at higher energies like X-rays and gamma rays. Why does this happen?</p>
+
+<h2>I. What Is Synchrotron Radiation?</h2>
+<p>A charged particle (like an electron) moving in a magnetic field <strong>B</strong> experiences a force that makes it spiral, emitting radiation. For very fast (relativistic) electrons, this is called synchrotron radiation.</p>
+<p>The force is given by:</p>
+<pre><code>F = q (v × B)</code></pre>
+
+<h2>II. The Synchrotron Frequency</h2>
+<p>The typical frequency of synchrotron radiation is:</p>
+<pre><code>ν<sub>sync</sub> ≈ γ² (e B) / (2π m<sub>e</sub> c)</code></pre>
+<ul>
+    <li>γ: Electron energy (Lorentz factor)</li>
+    <li>e: Electron charge</li>
+    <li>B: Magnetic field strength</li>
+    <li>m<sub>e</sub>: Electron mass</li>
+    <li>c: Speed of light</li>
+</ul>
+<p>Higher energy electrons and stronger magnetic fields produce higher frequency radiation.</p>
+
+<h2>III. Synchrotron Cooling</h2>
+<p>Electrons lose energy as they emit synchrotron radiation. The cooling timescale is:</p>
+<pre><code>t<sub>sync</sub> ≈ 6π m<sub>e</sub> c / (σ<sub>T</sub> γ B²)</code></pre>
+<ul>
+    <li>High-energy electrons (large γ) cool quickly.</li>
+    <li>Strong magnetic fields (large B) also speed up cooling.</li>
+</ul>
+<p>Electrons that could emit X-rays or gamma rays lose energy too fast to fill large regions.</p>
+
+<h2>IV. Why Synchrotron Dominates in the Radio</h2>
+<ul>
+    <li>Typical AGN jets: B ≈ 10<sup>-5</sup>–10<sup>-3</sup> G, γ ≈ 10³–10⁴</li>
+    <li>Synchrotron peaks in the radio to infrared</li>
+    <li>Cooling times are long, so emission fills large areas</li>
+</ul>
+
+<h2>V. Why It Fades in X-rays and Gamma Rays</h2>
+<ul>
+    <li>To emit X-rays: need γ ≥ 10⁷</li>
+    <li>Such electrons cool in hours or days</li>
+    <li>Emission is only possible in small, energetic regions</li>
+    <li>Other processes (like inverse Compton scattering) take over at high energies</li>
+</ul>
+
+
+<h2>VI. Order-of-Magnitude Illustration</h2>
+<p>
+    Take an electron with γ = 1000 in a magnetic field of B = 100 μG. Plug into:
+</p>
+<pre><code>ν<sub>sync</sub> ≈ γ² (e B) / (2π m<sub>e</sub> c)</code></pre>
+<p>
+    Calculate:
+</p>
+<pre><code>ν<sub>sync</sub> ≈ 10<sup>6</sup> × (2.8 × 10<sup>6</sup> Hz) ≈ 2.8 GHz</code></pre>
+<p>
+    This aligns perfectly with observed AGN jet radio emission.
+</p>
+
+
+<style>
+    .modern-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5em 0;
+        font-family: system-ui, sans-serif;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .modern-table th, .modern-table td {
+        border: 1px solid #e0e0e0;
+        padding: 0.75em 1em;
+        text-align: left;
+    }
+    .modern-table thead {
+        background: #f7f7fa;
+    }
+    .modern-table th {
+        font-weight: 600;
+        letter-spacing: 0.03em;
+    }
+    .modern-table tbody tr:nth-child(even) {
+        background: #fafbfc;
+    }
+    .modern-table tbody tr:hover {
+        background: #f0f4fa;
+        transition: background 0.2s;
+    }
+</style>
+<table class="modern-table">
+    <thead>
+        <tr>
+            <th>Regime</th>
+            <th>Synchrotron?</th>
+            <th>Examples</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Radio</td>
+            <td>Yes</td>
+            <td>AGN jets, supernovae</td>
+        </tr>
+        <tr>
+            <td>Infrared</td>
+            <td>Yes</td>
+            <td>Starbursts, AGN tori</td>
+        </tr>
+        <tr>
+            <td>Optical</td>
+            <td>Sometimes</td>
+            <td>M87 jet, blazars</td>
+        </tr>
+        <tr>
+            <td>X-ray</td>
+            <td>Rare</td>
+            <td>Crab Nebula, GRB afterglows</td>
+        </tr>
+        <tr>
+            <td>Gamma-ray</td>
+            <td>No</td>
+            <td>Usually other processes</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2>VII. Conclusion</h2>
+<p>Synchrotron radiation dominates the radio emission from AGNs because electrons can emit at these frequencies for long times and over large regions. At higher energies, electrons lose energy too quickly, so other processes become more important.</p>
+
+
