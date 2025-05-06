@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/tilphysics/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/tilphysics/" rel="alternate" type="text/html" /><updated>2025-05-05T16:26:25+05:30</updated><id>http://localhost:4000/tilphysics/feed.xml</id><title type="html">Today I Learned (TIL) Physics</title><subtitle>Today I Learned (TIL) Physics</subtitle><author><name>Vivek Kumar Jha</name></author><entry><title type="html">TIL Physics 18: Why Synchrotron Radiation Dominates Radio AGNs</title><link href="http://localhost:4000/tilphysics/2025/05/04/til-18.html" rel="alternate" type="text/html" title="TIL Physics 18: Why Synchrotron Radiation Dominates Radio AGNs" /><published>2025-05-04T22:15:13+05:30</published><updated>2025-05-04T22:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2025/05/04/til-18</id><content type="html" xml:base="http://localhost:4000/tilphysics/2025/05/04/til-18.html"><![CDATA[<p>Synchrotron radiation is a key process in the radio emission from active galactic nuclei (AGNs). It is produced when fast-moving electrons spiral around magnetic field lines, emitting energy as they accelerate. This process is especially important in the radio bands but becomes less significant at higher energies like X-rays and gamma rays. Why does this happen?</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/tilphysics/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/tilphysics/" rel="alternate" type="text/html" /><updated>2025-05-05T16:32:23+05:30</updated><id>http://localhost:4000/tilphysics/feed.xml</id><title type="html">Today I Learned (TIL) Physics</title><subtitle>Today I Learned (TIL) Physics</subtitle><author><name>Vivek Kumar Jha</name></author><entry><title type="html">TIL Physics 19: Kirchhoff’s Laws &amp;amp; Their Role in Astrophysical Spectra</title><link href="http://localhost:4000/tilphysics/2025/05/05/til-19.html" rel="alternate" type="text/html" title="TIL Physics 19: Kirchhoff’s Laws &amp;amp; Their Role in Astrophysical Spectra" /><published>2025-05-05T02:15:13+05:30</published><updated>2025-05-05T02:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2025/05/05/til-19</id><content type="html" xml:base="http://localhost:4000/tilphysics/2025/05/05/til-19.html"><![CDATA[<p>In the study of astrophysical spectra, <strong>Kirchhoff's Laws</strong> provide essential insights into the behaviour of light as it interacts with matter. These fundamental laws, named after Gustav Kirchhoff, describe the relationship between emitted, absorbed, and transmitted radiation. They play a crucial role in interpreting the spectra of celestial bodies, guiding astronomers in understanding the physical properties of distant stars, galaxies, and other astrophysical phenomena.</p>
+
+    <h2>I. 🔎 Kirchhoff’s First Law: Emission Spectra</h2>
+
+    <p>Kirchhoff's First Law states that a <strong>hot, dense object</strong> emits radiation that is characteristic of its temperature and composition. In astrophysics, this principle applies to stars and other compact objects like white dwarfs and black holes.</p>
+
+    <p>Consider the radiation emitted by a star. The light from such an object is a spectrum that has a continuous distribution of wavelengths, often referred to as a <strong>blackbody spectrum</strong>. The intensity of the radiation at any given wavelength depends on the temperature of the object. Mathematically, this spectrum is described by <strong>Planck’s Law</strong>:</p>
+
+    <pre><code>I(&#x03BD;, T) = (8&#x03C0; h&#x03BD;<sup>3</sup>) / (c<sup>3</sup>) * 1 / (exp(h&#x03BD; / kT) - 1)</code></pre>
+
+    <p>Where:</p>
+    <ul>
+        <li><code>I(&#x03BD;, T)</code> is the intensity of radiation at frequency <code>&#x03BD;</code> and temperature <code>T</code></li>
+        <li><code>h</code> is Planck’s constant, <code>c</code> is the speed of light, and <code>k</code> is Boltzmann's constant.</li>
+    </ul>
+
+    <p>This spectrum is typical of stars and can be observed as a continuous spectrum in the absence of any intervening material.</p>
+
+    <h2>II. 🔥 Kirchhoff’s Second Law: Absorption Spectra</h2>
+
+    <p>The Second Law of Kirchhoff asserts that a <strong>cold, diffuse gas</strong> absorbs radiation at the same wavelengths it would emit if it were heated. This principle underpins the formation of absorption lines in the spectra of stars, galaxies, and other objects.</p>
+
+    <p>When light from a hot, dense object (like a star) passes through a cooler, diffuse medium (such as a nebula or the outer atmosphere of the star itself), the gas absorbs specific wavelengths of light corresponding to the energies of the transitions between different energy levels of the atoms or molecules in the gas. The resulting spectrum consists of dark absorption lines superimposed on the continuous emission spectrum, known as an <strong>absorption spectrum</strong>.</p>
+
+    <p>These lines, typically seen in the optical and ultraviolet spectra of stars, are crucial in determining the chemical composition and physical conditions of the absorbing gas. The pattern of these absorption lines, along with their strengths, provides a wealth of information about the electron transitions in atoms.</p>
+
+    <h2>III. 🔄 Kirchhoff’s Third Law: Emission and Absorption Equivalence</h2>
+
+    <p>Kirchhoff’s Third Law combines the first two, stating that the emission and absorption properties of a substance are intimately related. Specifically, the intensity of the radiation emitted by a substance in thermal equilibrium is identical to the intensity of radiation absorbed by the same substance. This is key in understanding phenomena like <strong>thermal radiation equilibrium</strong> in stars and other celestial bodies.</p>
+
+    <p>In astrophysical contexts, this law allows astronomers to use absorption spectra to infer the temperature of distant objects. If the spectrum of an object can be observed in both emission and absorption forms, one can compare the two spectra to calculate the temperature and other physical properties of the object.</p>
+
+    <h2>IV. 🌟 Applications of Kirchhoff’s Laws in Astrophysical Spectra</h2>
+
+    <h3>1. Stellar Atmospheres and Spectral Classification</h3>
+
+    <p>The most direct application of Kirchhoff’s Laws in astrophysics is the classification of stars based on their spectral lines. The balance between emission and absorption spectra in a star's atmosphere provides the key to determining its spectral type, temperature, chemical composition, and other important parameters.</p>
+
+    <p>Stars like our Sun exhibit a rich spectrum with absorption lines corresponding to elements like hydrogen, sodium, calcium, and iron. These absorption lines are a direct consequence of the cooler outer layers of the star absorbing specific wavelengths of light emitted by the hotter core. By studying the patterns and depths of these absorption lines, astronomers can classify stars and even measure their radial velocities through the Doppler shift.</p>
+
+    <h3>2. Interstellar and Intergalactic Medium</h3>
+
+    <p>Beyond stars, Kirchhoff’s Laws help us understand the conditions in the <strong>interstellar medium (ISM)</strong> and the <strong>intergalactic medium (IGM)</strong>. The gas and dust in these regions absorb and emit light, producing characteristic spectral features. By analysing absorption spectra from distant quasars or galaxies, astronomers can determine the composition, temperature, and ionization state of the intervening gas clouds.</p>
+
+    <h3>3. Quasars and Active Galactic Nuclei (AGN)</h3>
+
+    <p>In the case of active galactic nuclei (AGN) and quasars, the spectra show both broad emission lines and narrow absorption lines, a combination that provides critical information about the velocity, chemical composition, and other properties of the gas around the central supermassive black hole. Here, Kirchhoff’s Laws allow astronomers to measure the temperature and density of the accretion disk, the outflows of gas, and even the rotation of the black hole.</p>
+
+    <h2>V. 🧬 Quantum Mechanics and Kirchhoff’s Laws</h2>
+
+    <p>It is essential to recognise that Kirchhoff’s Laws are rooted in the principles of quantum mechanics. The absorption and emission spectra of atoms and molecules depend on the discrete energy levels available to electrons, which is a quantum phenomenon. Each element has a unique set of energy levels, and the corresponding transitions between these levels give rise to characteristic absorption and emission lines. These quantum transitions are governed by the principles of quantum mechanics, and Kirchhoff’s Laws serve as an empirical summary of how light interacts with matter on a macroscopic scale.</p>
+
+    <h2>VI. 📚 Conclusion</h2>
+
+    <p>Kirchhoff’s Laws are the cornerstone of understanding the behaviour of light in astrophysical contexts. By applying these laws to the study of emission and absorption spectra, astronomers can extract detailed information about the physical properties of stars, galaxies, nebulae, and the interstellar medium. From classifying stars to probing the composition of distant galaxies, Kirchhoff’s Laws continue to be indispensable in unraveling the mysteries of the universe.</p>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[In the study of astrophysical spectra, Kirchhoff's Laws provide essential insights into the behaviour of light as it interacts with matter. These fundamental laws, named after Gustav Kirchhoff, describe the relationship between emitted, absorbed, and transmitted radiation. They play a crucial role in interpreting the spectra of celestial bodies, guiding astronomers in understanding the physical properties of distant stars, galaxies, and other astrophysical phenomena.]]></summary></entry><entry><title type="html">TIL Physics 18: Why Synchrotron Radiation Dominates Radio AGNs</title><link href="http://localhost:4000/tilphysics/2025/05/04/til-18.html" rel="alternate" type="text/html" title="TIL Physics 18: Why Synchrotron Radiation Dominates Radio AGNs" /><published>2025-05-04T22:15:13+05:30</published><updated>2025-05-04T22:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2025/05/04/til-18</id><content type="html" xml:base="http://localhost:4000/tilphysics/2025/05/04/til-18.html"><![CDATA[<p>Synchrotron radiation is a key process in the radio emission from active galactic nuclei (AGNs). It is produced when fast-moving electrons spiral around magnetic field lines, emitting energy as they accelerate. This process is especially important in the radio bands but becomes less significant at higher energies like X-rays and gamma rays. Why does this happen?</p>
 
 <h2>I. What Is Synchrotron Radiation?</h2>
 <p>A charged particle (like an electron) moving in a magnetic field <strong>B</strong> experiences a force that makes it spiral, emitting radiation. For very fast (relativistic) electrons, this is called synchrotron radiation.</p>
@@ -450,74 +504,6 @@
     <h2>Conclusion</h2>
 
     <p>Superluminal motion in quasars is a relativistic effect that results from the geometry and high velocity of quasar jets. Although it appears that the jets move faster than the speed of light, this is an illusion caused by the near-light-speed motion of the jets and the angle of observation. These observations are critical for understanding the dynamics of relativistic jets in quasars and AGN, shedding light on their orientation, speed, and emission processes.</p>
-
-</body>
-</html>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">TIL Physics 09: Strömgren Sphere</title><link href="http://localhost:4000/tilphysics/2024/09/18/til-09.html" rel="alternate" type="text/html" title="TIL Physics 09: Strömgren Sphere" /><published>2024-09-18T22:15:13+05:30</published><updated>2024-09-18T22:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/18/til-09</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/18/til-09.html"><![CDATA[<body>
-
-    <h1>The Strömgren Sphere</h1>
-
-    <p>A <strong>Strömgren Sphere</strong> refers to the spherical region of ionized hydrogen (H II region) surrounding a hot, massive star emitting high-energy ultraviolet (UV) radiation. Named after the Danish astronomer Bengt Strömgren, who first c<a href="https://ui.adsabs.harvard.edu/abs/1939ApJ....89..526S/abstract"target=None>alculated the equilibrium conditions of such regions in 1939</a>, this concept is crucial in the study of ionized interstellar media (ISM), star formation, and galactic dynamics.</p>
-
-    <p>The Strömgren Sphere represents the balance between two competing processes: the ionizing UV photons from the central star and the recombination of free electrons with protons (neutral hydrogen atoms). Understanding the Strömgren Sphere involves calculating the radius at which the rate of photoionization equals the rate of recombination, marking the boundary between ionized hydrogen and neutral hydrogen in the interstellar medium.</p>
-
-    <h2>Basic Theory of Ionization and Recombination</h2>
-
-    <p>The UV photons emitted by a massive O-type or B-type star can ionize hydrogen atoms within the surrounding ISM. Each ionized hydrogen atom emits an electron and a proton, which may eventually recombine. The ionization equilibrium is established when the rate of ionizing photons matches the recombination rate. Mathematically, this balance defines the radius of the Strömgren Sphere, <code>R<sub>S</sub></code>, and can be derived from the following condition:</p>
-
-    <p><code>n<sub>e</sub> n<sub>p</sub> α<sub>B</sub> = S / (4π R<sub>S</sub><sup>3</sup> / 3)</code>,</p>
-
-    <p>where:</p>
-    <ul>
-        <li><code>n<sub>e</sub></code> = number density of free electrons</li>
-        <li><code>n<sub>p</sub></code> = number density of protons (assumed equal to the electron density in pure hydrogen regions)</li>
-        <li><code>α<sub>B</sub></code> = recombination coefficient for hydrogen, considering recombinations to all excited states (case B recombination)</li>
-        <li><code>S</code> = ionizing photon luminosity (number of ionizing photons emitted per second by the star)</li>
-    </ul>
-
-    <p>In equilibrium, this equation is solved for <code>R<sub>S</sub></code>, the Strömgren radius, which determines the size of the ionized region. For typical O-type stars with high ionizing fluxes, the Strömgren radius can range from a few parsecs to tens of parsecs, depending on the density of the surrounding medium.</p>
-
-    <h2>Calculating the Strömgren Radius</h2>
-
-    <p>To derive the Strömgren radius, we begin with the ionization balance equation, expressing the total number of ionizing photons equal to the number of recombinations within the sphere. For simplicity, in a fully ionized hydrogen region, we assume that <code>n<sub>e</sub> ≈ n<sub>p</sub> ≈ n<sub>H</sub></code> (where <code>n<sub>H</sub></code> is the hydrogen number density), and integrating over the volume of the sphere gives:</p>
-
-    <p><code>S = (4π / 3) R<sub>S</sub><sup>3</sup> n<sub>H</sub><sup>2</sup> α<sub>B</sub></code>.</p>
-
-    <p>Solving for <code>R<sub>S</sub></code>, we get the Strömgren radius as:</p>
-
-    <p><code>R<sub>S</sub> = (3 S / (4π n<sub>H</sub><sup>2</sup> α<sub>B</sub>))<sup>1/3</sup></code>.</p>
-
-    <p>This radius represents the region around a star where hydrogen remains ionized. Beyond this boundary, the radiation is insufficient to ionize the hydrogen atoms faster than they can recombine, and the gas becomes neutral.</p>
-
-    <h2>Physical Properties of the Strömgren Sphere</h2>
-
-    <p>Several factors affect the structure and evolution of the Strömgren Sphere:</p>
-    <ul>
-        <li><strong>Density of the ISM</strong>: Higher densities reduce the size of the Strömgren Sphere, as the increased number of particles leads to more recombination events, requiring the sphere to shrink to maintain equilibrium.</li>
-        <li><strong>Stellar Ionizing Flux</strong>: The luminosity of the central star in the UV range determines the number of ionizing photons produced. Hotter stars (such as O-type) generate more ionizing photons, leading to larger Strömgren Spheres.</li>
-        <li><strong>Recombination Coefficient</strong>: The recombination rate depends on the electron temperature and density. The commonly used recombination coefficient is the <code>α<sub>B</sub></code> value for "case B" recombination, which excludes recombinations to the ground state (since such photons are immediately re-absorbed).</li>
-        <li><strong>Time Evolution</strong>: The Strömgren Sphere does not form instantaneously. Initially, the sphere grows rapidly until it approaches the equilibrium size dictated by the ionization balance. The growth is often modeled by solving time-dependent ionization equations.</li>
-    </ul>
-
-    <p>In a steady state, the radius <code>R<sub>S</sub></code> remains constant, but in realistic astrophysical scenarios, the star's UV output may change, and the surrounding gas may be dynamically evolving, affecting the structure and size of the ionized region.</p>
-
-    <h2>Strömgren Spheres in Astrophysical Contexts</h2>
-
-    <p>The Strömgren Sphere model is widely applicable in different astrophysical environments:</p>
-    <ul>
-        <li><strong>H II Regions</strong>: Strömgren Spheres are the theoretical foundation for understanding H II regions, the ionized regions surrounding young, massive stars. These regions are observable in the radio, infrared, and optical spectra, particularly through emission lines such as H<sub>α</sub>.</li>
-        <li><strong>Stellar Formation and Feedback</strong>: The ionization of surrounding gas by newly-formed stars can regulate further star formation by either compressing neutral gas (triggering collapse) or dispersing it (suppressing collapse).</li>
-        <li><strong>Cosmic Reionization</strong>: On cosmological scales, analogous to Strömgren Spheres are the ionized bubbles produced by the first galaxies and quasars during the epoch of reionization. As these sources ionized the intergalactic medium (IGM), overlapping Strömgren Spheres contributed to the reionization of the Universe.</li>
-    </ul>
-
-    <h2>Observational Signatures</h2>
-
-    <p>Strömgren Spheres are typically observed as emission nebulae in regions of recent star formation. The H<sub>α</sub> line (656.3 nm), emitted by hydrogen recombining in the ionized region, is one of the key observational signatures of these regions. Radio observations at wavelengths corresponding to free-free emission also provide insights into the size and density structure of these ionized regions.</p>
-
-    <p>Modern observations with instruments such as the Hubble Space Telescope (HST) and radio telescopes have allowed for detailed studies of Strömgren Spheres in nearby star-forming regions, helping to refine theoretical models.</p>
-
-    <h2>Conclusion</h2>
-
-    <p>The Strömgren Sphere is a fundamental concept in astrophysics, describing the ionized regions around young, massive stars. Understanding the balance of ionization and recombination, as well as the factors influencing the sphere's size and evolution, is critical for studying stellar feedback, H II regions, and the ionization of the interstellar medium. Both theoretical calculations and observational data continue to enhance our knowledge of these vital regions in the life cycle of stars and galaxies.</p>
 
 </body>
 </html>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[]]></summary></entry></feed>
