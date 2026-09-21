@@ -1,0 +1,154 @@
+---
+
+layout: post
+title: "TIL Physics 20: Free–Free Emission & Absorption"
+subtitle: "How electrons and ions produce and absorb continuum radiation in astrophysical plasmas"
+date: 2026-09-21 10:05:13 -0400
+background: '/img/posts/06.jpg'
+-------------------------------
+
+```
+<p>In astrophysical plasmas, charged particles are constantly interacting through the Coulomb force. One important consequence of these interactions is <strong>free–free radiation</strong>, in which a free electron interacts with a free ion and either emits or absorbs a photon. The process is called <strong>free–free</strong> because the electron remains free before and after the interaction; it does not become bound to the ion.</p>
+
+<h2>I. ⚡ What is Free–Free Emission?</h2>
+
+<p>Consider a free electron passing close to a positively charged ion. The electron is attracted towards the ion by the Coulomb force and is therefore accelerated and subsequently deflected. Because an accelerating charge can radiate electromagnetic energy, the electron may emit a photon during this encounter.</p>
+
+<p>The process can be represented schematically as:</p>
+
+<pre><code>e<sup>−</sup> + Z<sup>+</sup> → e<sup>−</sup> + Z<sup>+</sup> + hν</code></pre>
+
+<p>The emitted photon carries away energy from the electron–ion system. To a very good approximation, since the ion is much more massive than the electron, this energy comes from the kinetic energy of the electron:</p>
+
+<pre><code>hν ≈ K<sub>i</sub> − K<sub>f</sub></code></pre>
+
+<p>where <code>K<sub>i</sub></code> and <code>K<sub>f</sub></code> are the initial and final kinetic energies of the electron. The electron therefore emerges from the encounter with slightly less kinetic energy, while the lost energy is carried away by the photon.</p>
+
+<p>This radiation is commonly known as <strong>bremsstrahlung</strong>, from the German words meaning "braking radiation". The term reflects the fact that the electron is accelerated or decelerated by the Coulomb field of the ion.</p>
+
+
+<h2>II. 🌈 Why Does Free–Free Emission Produce a Continuum?</h2>
+
+<p>Unlike an electron bound within an atom, a free electron does not possess discrete energy levels. Its kinetic energy can take a continuous range of values. Consequently, the amount of energy that can be transferred to a photon is also continuous.</p>
+
+<p>Thus, free–free emission does not produce discrete spectral lines. Instead, it produces a <strong>continuous spectrum</strong>.</p>
+
+<p>This is an important distinction from bound–bound transitions, in which an electron moves between discrete atomic energy levels and produces photons at specific wavelengths.</p>
+
+<p>The process can therefore be summarised as:</p>
+
+<pre><code>Bound → Bound      : Spectral line
+```
+
+Bound → Free       : Photoionisation
+Free → Bound       : Recombination
+Free → Free        : Continuum radiation</code></pre>
+
+```
+<h2>III. 🔥 Thermal Bremsstrahlung</h2>
+
+<p>In an astrophysical plasma, electrons usually possess a distribution of kinetic energies described approximately by a Maxwell–Boltzmann distribution. The combined effect of many electron–ion encounters produces what is known as <strong>thermal bremsstrahlung</strong> or <strong>free–free emission</strong>.</p>
+
+<p>The emissivity of thermal free–free radiation can be written approximately as:</p>
+
+<pre><code>j<sub>ν</sub><sup>ff</sup> ∝ Z<sup>2</sup> n<sub>e</sub> n<sub>i</sub> T<sup>−1/2</sup>
+      exp(−hν/kT) g<sub>ff</sub></code></pre>
+
+<p>where:</p>
+
+<ul>
+    <li><code>j<sub>ν</sub><sup>ff</sup></code> is the free–free volume emissivity at frequency <code>ν</code></li>
+    <li><code>Z</code> is the charge of the ion</li>
+    <li><code>n<sub>e</sub></code> and <code>n<sub>i</sub></code> are the electron and ion number densities</li>
+    <li><code>T</code> is the temperature of the plasma</li>
+    <li><code>g<sub>ff</sub></code> is the <strong>Gaunt factor</strong>, a quantum-mechanical correction to the classical calculation.</li>
+</ul>
+
+<p>The exponential term shows that high-energy photons become increasingly rare when <code>hν</code> is much larger than the thermal energy <code>kT</code>. Consequently, the high-frequency portion of a thermal bremsstrahlung spectrum provides information about the temperature of the emitting plasma.</p>
+
+
+<h2>IV. 🔄 Free–Free Absorption</h2>
+
+<p>The reverse process is <strong>free–free absorption</strong>. Here, a free electron and a free ion interact in the presence of an incoming photon. The photon is absorbed and its energy is transferred to the electron–ion system.</p>
+
+<pre><code>e<sup>−</sup> + Z<sup>+</sup> + hν → e<sup>−</sup> + Z<sup>+</sup></code></pre>
+
+<p>The electron remains free after the interaction, but its kinetic energy increases:</p>
+
+<pre><code>K<sub>i</sub> + hν ≈ K<sub>f</sub></code></pre>
+
+<p>Thus, free–free absorption is essentially the inverse of free–free emission. In emission, kinetic energy is converted into photon energy; in absorption, photon energy is converted into kinetic energy.</p>
+
+<p>An important subtlety is that a free electron cannot simply absorb a photon by itself while simultaneously conserving both energy and momentum. The nearby ion is essential because it participates in the interaction and can absorb the required momentum. Since the ion is much more massive than the electron, the associated recoil energy is usually negligible.</p>
+
+
+<h2>V. 📡 Free–Free Absorption in Radio Astronomy</h2>
+
+<p>Free–free absorption becomes particularly important at low frequencies. The absorption coefficient is approximately:</p>
+
+<pre><code>α<sub>ν</sub><sup>ff</sup> ∝ T<sup>−3/2</sup> n<sub>e</sub> n<sub>i</sub> ν<sup>−2</sup> g<sub>ff</sub></code></pre>
+
+<p>The approximate <code>ν<sup>−2</sup></code> dependence means that free–free absorption becomes stronger towards lower frequencies. An ionised region that is optically thin at optical or X-ray wavelengths can therefore become optically thick at sufficiently low radio frequencies.</p>
+
+<p>This effect is important when interpreting radio observations of <strong>H II regions, stellar winds, planetary nebulae, supernova remnants, and AGN environments</strong>.</p>
+
+
+<h2>VI. 🌌 Where Do We Observe Free–Free Radiation?</h2>
+
+<p>Free–free emission is ubiquitous wherever hot ionised gas is present. It is observed in a wide range of astrophysical environments, including <strong>H II regions, planetary nebulae, stellar coronae, stellar winds, supernova remnants, accretion flows, and the intracluster medium</strong>.</p>
+
+<p>For example, the hot plasma in a galaxy cluster can produce thermal bremsstrahlung in the X-ray band. The characteristic high-energy continuum then provides information about the temperature and density of the intracluster gas.</p>
+
+<p>Similarly, ionised gas surrounding young massive stars can produce free–free radio emission. Because this radiation is associated with ionised gas, its strength can be used as a diagnostic of the amount of ionising radiation produced by massive stars.</p>
+
+
+<h2>VII. ⚖️ Emission and Absorption: The Energy Picture</h2>
+
+<p>The simplest way to remember the two processes is through energy conservation.</p>
+
+<pre><code>Free–Free Emission:
+```
+
+Electron kinetic energy → Photon energy
+
+K<sub>i</sub> → K<sub>f</sub> + hν
+
+Free–Free Absorption:
+
+Photon energy → Electron kinetic energy
+
+K<sub>i</sub> + hν → K<sub>f</sub></code></pre>
+
+```
+<p>In both cases, the Coulomb field of the ion provides the interaction that permits the exchange of energy and momentum between the charged particles and the electromagnetic field.</p>
+
+<p>The essential point is that the electron remains <strong>free before and after the interaction</strong>. No atomic energy level is involved. The radiation therefore forms a continuum rather than a collection of discrete spectral lines.</p>
+
+
+<h2>VIII. 🧬 The Quantum Picture</h2>
+
+<p>The classical description explains free–free radiation in terms of the acceleration of a charged particle. Quantum mechanically, the process is described as a <strong>continuum-to-continuum transition</strong> in the Coulomb field of the ion.</p>
+
+<p>The electron begins in one unbound state and ends in another unbound state:</p>
+
+<pre><code>|e<sup>−</sup>, E<sub>i</sub>⟩ → |e<sup>−</sup>, E<sub>f</sub>⟩ + γ</code></pre>
+
+<p>with the emitted photon satisfying approximately:</p>
+
+<pre><code>hν = E<sub>i</sub> − E<sub>f</sub></code></pre>
+
+<p>This quantum description is the more fundamental formulation, while the classical picture of an accelerating charge provides an intuitive understanding of why radiation is produced.</p>
+
+
+<h2>IX. 📚 Conclusion</h2>
+
+<p>Free–free emission and absorption are fundamental radiative processes in ionised astrophysical plasmas. In free–free emission, an electron is deflected by an ion and loses part of its kinetic energy, which emerges as a photon. In free–free absorption, the reverse occurs: a photon is absorbed and its energy increases the kinetic energy of the electron.</p>
+
+<p>Because the electron is free both before and after the interaction, there are no discrete atomic energy levels determining the photon energy. The result is <strong>continuum radiation</strong>, making free–free processes an important diagnostic of the temperature, density, and ionisation state of astrophysical plasmas.</p>
+
+<p>In short:</p>
+
+<pre><code>Free–Free Emission    :   e<sup>−</sup> + ion → e<sup>−</sup> + ion + γ
+```
+
+Free–Free Absorption  :   e<sup>−</sup> + ion + γ → e<sup>−</sup> + ion</code></pre>
