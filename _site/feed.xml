@@ -1,4 +1,147 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/tilphysics/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/tilphysics/" rel="alternate" type="text/html" /><updated>2025-05-05T16:32:23+05:30</updated><id>http://localhost:4000/tilphysics/feed.xml</id><title type="html">Today I Learned (TIL) Physics</title><subtitle>Today I Learned (TIL) Physics</subtitle><author><name>Vivek Kumar Jha</name></author><entry><title type="html">TIL Physics 19: Kirchhoff’s Laws &amp;amp; Their Role in Astrophysical Spectra</title><link href="http://localhost:4000/tilphysics/2025/05/05/til-19.html" rel="alternate" type="text/html" title="TIL Physics 19: Kirchhoff’s Laws &amp;amp; Their Role in Astrophysical Spectra" /><published>2025-05-05T02:15:13+05:30</published><updated>2025-05-05T02:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2025/05/05/til-19</id><content type="html" xml:base="http://localhost:4000/tilphysics/2025/05/05/til-19.html"><![CDATA[<p>In the study of astrophysical spectra, <strong>Kirchhoff's Laws</strong> provide essential insights into the behaviour of light as it interacts with matter. These fundamental laws, named after Gustav Kirchhoff, describe the relationship between emitted, absorbed, and transmitted radiation. They play a crucial role in interpreting the spectra of celestial bodies, guiding astronomers in understanding the physical properties of distant stars, galaxies, and other astrophysical phenomena.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/tilphysics/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/tilphysics/" rel="alternate" type="text/html" /><updated>2026-09-21T10:11:14+05:30</updated><id>http://localhost:4000/tilphysics/feed.xml</id><title type="html">Today I Learned (TIL) Physics</title><subtitle>Today I Learned (TIL) Physics</subtitle><author><name>Vivek Kumar Jha</name></author><entry><title type="html">TIL Physics 20: Free–Free Emission &amp;amp; Absorption</title><link href="http://localhost:4000/tilphysics/2026/09/20/til-20.html" rel="alternate" type="text/html" title="TIL Physics 20: Free–Free Emission &amp;amp; Absorption" /><published>2026-09-20T19:35:13+05:30</published><updated>2026-09-20T19:35:13+05:30</updated><id>http://localhost:4000/tilphysics/2026/09/20/til-20</id><content type="html" xml:base="http://localhost:4000/tilphysics/2026/09/20/til-20.html"><![CDATA[<p>In astrophysical plasmas, charged particles are constantly interacting through the Coulomb force. One important consequence of these interactions is <strong>free–free radiation</strong>, in which a free electron interacts with a free ion and either emits or absorbs a photon. The process is called <strong>free–free</strong> because the electron remains free before and after the interaction; it does not become bound to the ion.</p>
+
+<h2>I. ⚡ What is Free–Free Emission?</h2>
+
+<p>Consider a free electron passing close to a positively charged ion. The electron is attracted towards the ion by the Coulomb force and is therefore accelerated and subsequently deflected. Because an accelerating charge can radiate electromagnetic energy, the electron may emit a photon during this encounter.</p>
+
+<p>The process can be represented schematically as:</p>
+
+<pre><code>e<sup>−</sup> + Z<sup>+</sup> → e<sup>−</sup> + Z<sup>+</sup> + hν</code></pre>
+
+<p>The emitted photon carries away energy from the electron–ion system. To a very good approximation, since the ion is much more massive than the electron, this energy comes from the kinetic energy of the electron:</p>
+
+<pre><code>hν ≈ K<sub>i</sub> − K<sub>f</sub></code></pre>
+
+<p>where <code>K<sub>i</sub></code> and <code>K<sub>f</sub></code> are the initial and final kinetic energies of the electron. The electron therefore emerges from the encounter with slightly less kinetic energy, while the lost energy is carried away by the photon.</p>
+
+<p>This radiation is commonly known as <strong>bremsstrahlung</strong>, from the German words meaning "braking radiation". The term reflects the fact that the electron is accelerated or decelerated by the Coulomb field of the ion.</p>
+
+
+<h2>II. 🌈 Why Does Free–Free Emission Produce a Continuum?</h2>
+
+<p>Unlike an electron bound within an atom, a free electron does not possess discrete energy levels. Its kinetic energy can take a continuous range of values. Consequently, the amount of energy that can be transferred to a photon is also continuous.</p>
+
+<p>Thus, free–free emission does not produce discrete spectral lines. Instead, it produces a <strong>continuous spectrum</strong>.</p>
+
+<p>This is an important distinction from bound–bound transitions, in which an electron moves between discrete atomic energy levels and produces photons at specific wavelengths.</p>
+
+<p>The process can therefore be summarised as:</p>
+
+<pre><code>Bound → Bound      : Spectral line
+```
+
+Bound → Free       : Photoionisation
+Free → Bound       : Recombination
+Free → Free        : Continuum radiation</code></pre>
+
+```
+<h2>III. 🔥 Thermal Bremsstrahlung</h2>
+
+<p>In an astrophysical plasma, electrons usually possess a distribution of kinetic energies described approximately by a Maxwell–Boltzmann distribution. The combined effect of many electron–ion encounters produces what is known as <strong>thermal bremsstrahlung</strong> or <strong>free–free emission</strong>.</p>
+
+<p>The emissivity of thermal free–free radiation can be written approximately as:</p>
+
+<pre><code>j<sub>ν</sub><sup>ff</sup> ∝ Z<sup>2</sup> n<sub>e</sub> n<sub>i</sub> T<sup>−1/2</sup>
+      exp(−hν/kT) g<sub>ff</sub></code></pre>
+
+<p>where:</p>
+
+<ul>
+    <li><code>j<sub>ν</sub><sup>ff</sup></code> is the free–free volume emissivity at frequency <code>ν</code></li>
+    <li><code>Z</code> is the charge of the ion</li>
+    <li><code>n<sub>e</sub></code> and <code>n<sub>i</sub></code> are the electron and ion number densities</li>
+    <li><code>T</code> is the temperature of the plasma</li>
+    <li><code>g<sub>ff</sub></code> is the <strong>Gaunt factor</strong>, a quantum-mechanical correction to the classical calculation.</li>
+</ul>
+
+<p>The exponential term shows that high-energy photons become increasingly rare when <code>hν</code> is much larger than the thermal energy <code>kT</code>. Consequently, the high-frequency portion of a thermal bremsstrahlung spectrum provides information about the temperature of the emitting plasma.</p>
+
+
+<h2>IV. 🔄 Free–Free Absorption</h2>
+
+<p>The reverse process is <strong>free–free absorption</strong>. Here, a free electron and a free ion interact in the presence of an incoming photon. The photon is absorbed and its energy is transferred to the electron–ion system.</p>
+
+<pre><code>e<sup>−</sup> + Z<sup>+</sup> + hν → e<sup>−</sup> + Z<sup>+</sup></code></pre>
+
+<p>The electron remains free after the interaction, but its kinetic energy increases:</p>
+
+<pre><code>K<sub>i</sub> + hν ≈ K<sub>f</sub></code></pre>
+
+<p>Thus, free–free absorption is essentially the inverse of free–free emission. In emission, kinetic energy is converted into photon energy; in absorption, photon energy is converted into kinetic energy.</p>
+
+<p>An important subtlety is that a free electron cannot simply absorb a photon by itself while simultaneously conserving both energy and momentum. The nearby ion is essential because it participates in the interaction and can absorb the required momentum. Since the ion is much more massive than the electron, the associated recoil energy is usually negligible.</p>
+
+
+<h2>V. 📡 Free–Free Absorption in Radio Astronomy</h2>
+
+<p>Free–free absorption becomes particularly important at low frequencies. The absorption coefficient is approximately:</p>
+
+<pre><code>α<sub>ν</sub><sup>ff</sup> ∝ T<sup>−3/2</sup> n<sub>e</sub> n<sub>i</sub> ν<sup>−2</sup> g<sub>ff</sub></code></pre>
+
+<p>The approximate <code>ν<sup>−2</sup></code> dependence means that free–free absorption becomes stronger towards lower frequencies. An ionised region that is optically thin at optical or X-ray wavelengths can therefore become optically thick at sufficiently low radio frequencies.</p>
+
+<p>This effect is important when interpreting radio observations of <strong>H II regions, stellar winds, planetary nebulae, supernova remnants, and AGN environments</strong>.</p>
+
+
+<h2>VI. 🌌 Where Do We Observe Free–Free Radiation?</h2>
+
+<p>Free–free emission is ubiquitous wherever hot ionised gas is present. It is observed in a wide range of astrophysical environments, including <strong>H II regions, planetary nebulae, stellar coronae, stellar winds, supernova remnants, accretion flows, and the intracluster medium</strong>.</p>
+
+<p>For example, the hot plasma in a galaxy cluster can produce thermal bremsstrahlung in the X-ray band. The characteristic high-energy continuum then provides information about the temperature and density of the intracluster gas.</p>
+
+<p>Similarly, ionised gas surrounding young massive stars can produce free–free radio emission. Because this radiation is associated with ionised gas, its strength can be used as a diagnostic of the amount of ionising radiation produced by massive stars.</p>
+
+
+<h2>VII. ⚖️ Emission and Absorption: The Energy Picture</h2>
+
+<p>The simplest way to remember the two processes is through energy conservation.</p>
+
+<pre><code>Free–Free Emission:
+```
+
+Electron kinetic energy → Photon energy
+
+K<sub>i</sub> → K<sub>f</sub> + hν
+
+Free–Free Absorption:
+
+Photon energy → Electron kinetic energy
+
+K<sub>i</sub> + hν → K<sub>f</sub></code></pre>
+
+```
+<p>In both cases, the Coulomb field of the ion provides the interaction that permits the exchange of energy and momentum between the charged particles and the electromagnetic field.</p>
+
+<p>The essential point is that the electron remains <strong>free before and after the interaction</strong>. No atomic energy level is involved. The radiation therefore forms a continuum rather than a collection of discrete spectral lines.</p>
+
+
+<h2>VIII. 🧬 The Quantum Picture</h2>
+
+<p>The classical description explains free–free radiation in terms of the acceleration of a charged particle. Quantum mechanically, the process is described as a <strong>continuum-to-continuum transition</strong> in the Coulomb field of the ion.</p>
+
+<p>The electron begins in one unbound state and ends in another unbound state:</p>
+
+<pre><code>|e<sup>−</sup>, E<sub>i</sub>⟩ → |e<sup>−</sup>, E<sub>f</sub>⟩ + γ</code></pre>
+
+<p>with the emitted photon satisfying approximately:</p>
+
+<pre><code>hν = E<sub>i</sub> − E<sub>f</sub></code></pre>
+
+<p>This quantum description is the more fundamental formulation, while the classical picture of an accelerating charge provides an intuitive understanding of why radiation is produced.</p>
+
+
+<h2>IX. 📚 Conclusion</h2>
+
+<p>Free–free emission and absorption are fundamental radiative processes in ionised astrophysical plasmas. In free–free emission, an electron is deflected by an ion and loses part of its kinetic energy, which emerges as a photon. In free–free absorption, the reverse occurs: a photon is absorbed and its energy increases the kinetic energy of the electron.</p>
+
+<p>Because the electron is free both before and after the interaction, there are no discrete atomic energy levels determining the photon energy. The result is <strong>continuum radiation</strong>, making free–free processes an important diagnostic of the temperature, density, and ionisation state of astrophysical plasmas.</p>
+
+<p>In short:</p>
+
+<pre><code>Free–Free Emission    :   e<sup>−</sup> + ion → e<sup>−</sup> + ion + γ
+```
+
+Free–Free Absorption  :   e<sup>−</sup> + ion + γ → e<sup>−</sup> + ion</code></pre>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[In astrophysical plasmas, charged particles are constantly interacting through the Coulomb force. One important consequence of these interactions is free–free radiation, in which a free electron interacts with a free ion and either emits or absorbs a photon. The process is called free–free because the electron remains free before and after the interaction; it does not become bound to the ion.]]></summary></entry><entry><title type="html">TIL Physics 19: Kirchhoff’s Laws &amp;amp; Their Role in Astrophysical Spectra</title><link href="http://localhost:4000/tilphysics/2025/05/05/til-19.html" rel="alternate" type="text/html" title="TIL Physics 19: Kirchhoff’s Laws &amp;amp; Their Role in Astrophysical Spectra" /><published>2025-05-05T02:15:13+05:30</published><updated>2025-05-05T02:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2025/05/05/til-19</id><content type="html" xml:base="http://localhost:4000/tilphysics/2025/05/05/til-19.html"><![CDATA[<p>In the study of astrophysical spectra, <strong>Kirchhoff's Laws</strong> provide essential insights into the behaviour of light as it interacts with matter. These fundamental laws, named after Gustav Kirchhoff, describe the relationship between emitted, absorbed, and transmitted radiation. They play a crucial role in interpreting the spectra of celestial bodies, guiding astronomers in understanding the physical properties of distant stars, galaxies, and other astrophysical phenomena.</p>
 
     <h2>I. 🔎 Kirchhoff’s First Law: Emission Spectra</h2>
 
@@ -475,35 +618,6 @@
     <h2>Conclusion</h2>
 
     <p>Both the Malmquist Bias and the Eddington Bias highlight the complexities of interpreting astronomical data. While the Malmquist Bias arises from selection effects in magnitude-limited surveys, the Eddington Bias stems from measurement uncertainties and their impact on steep distributions. These biases can significantly distort our understanding of the true distributions of cosmic objects, and correcting for them is crucial for drawing accurate conclusions from observational data. By applying appropriate statistical techniques, astronomers can mitigate these biases and ensure that their results reflect the underlying physical reality.</p>
-
-</body>
-</html>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">TIL Physics 10: Superluminal Motion</title><link href="http://localhost:4000/tilphysics/2024/09/19/til-10.html" rel="alternate" type="text/html" title="TIL Physics 10: Superluminal Motion" /><published>2024-09-19T22:15:13+05:30</published><updated>2024-09-19T22:15:13+05:30</updated><id>http://localhost:4000/tilphysics/2024/09/19/til-10</id><content type="html" xml:base="http://localhost:4000/tilphysics/2024/09/19/til-10.html"><![CDATA[<body>
-
-    <p>One of the most intriguing phenomena in astrophysics is the apparent <strong>superluminal motion</strong> observed in the jets of quasars and other active galactic nuclei (AGN). Superluminal motion refers to the illusion that the components of a quasar's jet are moving faster than the speed of light, <code>c</code>. While this seems to violate the principles of relativity, it is actually an observational effect arising from the relativistic motion of jets and the geometry of their emission relative to the observer.</p>
-
-    <h2>Relativistic Jet Ejection</h2>
-
-    <p>Quasars are known to eject relativistic jets of plasma, often aligned at small angles to our line of sight. The material in these jets can travel at speeds close to the speed of light. When such a jet is directed towards the Earth at a shallow angle, the motion of the jet, combined with the finite speed of light, creates the illusion of faster-than-light motion.</p>
-
-    <p>For a jet moving with velocity <code>v</code> at an angle <code>&theta;</code> to the line of sight, the apparent velocity <code>v<sub>app</sub></code> can be greater than <code>c</code> due to relativistic beaming effects. The formula for the apparent velocity is given by:</p>
-
-    <p><code>v<sub>app</sub> = (v sin(&theta;)) / (1 - (v/c) cos(&theta;))</code></p>
-
-    <p>When the velocity of the jet approaches <code>c</code> and the angle <code>&theta;</code> is small, the denominator in the equation becomes very small, leading to a high apparent velocity, often greater than the speed of light. However, this is an illusion; no physical object is actually traveling faster than light.</p>
-
-    <h2>Observational Evidence</h2>
-
-    <p>Superluminal motion has been observed in many quasars and AGN, particularly in radio-loud quasars and blazars. These observations are often made using Very Long Baseline Interferometry (VLBI), which provides high-resolution imaging of jet components moving over time. Superluminal speeds are commonly observed to be 2 to 10 times the speed of light, though even higher values have been reported in extreme cases.</p>
-
-    <h2>Physical Interpretation</h2>
-
-    <p>While superluminal motion is an optical illusion, it offers valuable insight into the properties of quasars. It provides evidence for highly relativistic jets, and combined with the observed jet morphologies and emission, allows for the estimation of the Lorentz factor <code>&gamma;</code> of the jet, which describes the relativistic boost. Typical values for the Lorentz factor range from <code>&gamma;</code> ≈ 10 to 30 for quasar jets.</p>
-
-    <p>Superluminal motion also helps astronomers infer the orientation of the jets relative to the observer's line of sight. Quasars with more prominent superluminal motion tend to have jets aligned more closely to our line of sight, explaining why this effect is particularly strong in blazars (a subclass of AGN with jets pointed almost directly toward Earth).</p>
-
-    <h2>Conclusion</h2>
-
-    <p>Superluminal motion in quasars is a relativistic effect that results from the geometry and high velocity of quasar jets. Although it appears that the jets move faster than the speed of light, this is an illusion caused by the near-light-speed motion of the jets and the angle of observation. These observations are critical for understanding the dynamics of relativistic jets in quasars and AGN, shedding light on their orientation, speed, and emission processes.</p>
 
 </body>
 </html>]]></content><author><name>Vivek Kumar Jha</name></author><summary type="html"><![CDATA[]]></summary></entry></feed>
